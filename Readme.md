@@ -1,8 +1,8 @@
 
 ---
-- nomeAluno: "jessik"
+- nomeAluno: "Jessik Vaz Gonzaga"
 - matricula: "605104"
----
+- curso: "design digital"
 
 # Instalando o TKO e configurando o repositório
 

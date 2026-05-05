@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-36-17",
+            "content": "@@ -70,87 +70,6 @@\n !%22)%0A\n-    var c float64%0A    fmt.Scan(&c)%0A    f:= 1.8*c + 32%0A    fmt.Printf(%22%25.6f%5Cn,f%22)%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-47-09",
+            "content": "@@ -33,16 +33,49 @@\n ain() %7B%0A\n+    fmt.Println(%22Hello, World!%22)%0A\n     var \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-31_17-52-49",
+            "content": "@@ -72,27 +72,21 @@\n &c)%0A\n-%0A\n     f\n- \n :=\n- (c *\n  1.8\n-)\n+*c\n  + 3\n@@ -113,13 +113,11 @@\n 6f%5Cn\n-%22, f)%0A\n+,f%22)\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-06_06-01-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c float64\n    fmt.Scan(&c)\n\n    f := (c * 1.8) + 32\n    fmt.Printf(\"%.6f\\n\", f)\n\n}\n",
+            "lines": "10"
+        }
+    ]
+}

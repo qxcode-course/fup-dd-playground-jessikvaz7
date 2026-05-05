@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_19-48-30",
+            "content": "@@ -37,46 +37,8 @@\n ) %7B%0A\n-    var a, b int%0A    fmt.Scan(&a, &b)%0A\n     \n@@ -53,19 +53,16 @@\n tln(\n-(a + b) / 2\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_19-53-04",
+            "content": "@@ -50,15 +50,11 @@\n , b \n-float64\n+int\n %0A   \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-23_19-53-35",
+            "content": "@@ -92,17 +92,11 @@\n rint\n-f(%22%25.1f%22,\n+ln(\n (a +\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-23_19-55-43",
+            "content": "@@ -99,10 +99,8 @@\n %25.1f\n-%5Cn\n %22,(a\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-23_19-57-05",
+            "content": "@@ -37,11 +37,85 @@\n ) %7B%0A    \n+var a, b float64%0A    fmt.Scan(&a, &b)%0A    fmt.Printf(%22%25.1f%5Cn%22,(a + b) / 2)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-05_18-33-46",
+            "content": "@@ -1,12 +1,19 @@\n+package\n  main%0Aimport\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_16-46-14",
+            "content": "@@ -1,11 +1,4 @@\n-package\n  mai\n@@ -30,136 +30,8 @@\n ) %7B%0A\n-%09var num1 int%0A%09var num2 int%0A%09var media int%0A%09fmt.Scan(&num1, &num2)%0A%09media = (num1 + num2) / 2%0A%09fmt.Println(%22a media %C3%A9:%22, media)%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_16-58-41",
+            "content": "@@ -43,23 +43,19 @@\n ar num1 \n-float64\n+int\n %0A%09var nu\n@@ -57,23 +57,19 @@\n ar num2 \n-float64\n+int\n %0A%09var me\n@@ -76,15 +76,11 @@\n dia \n-float64\n+int\n %0A%09fm\n@@ -140,16 +140,30 @@\n Println(\n+%22a media %C3%A9:%22, \n media)%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_17-01-58",
+            "content": "@@ -142,10 +142,8 @@\n  / 2\n-.0\n %0A%09fm\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_17-02-57",
+            "content": "@@ -145,37 +145,8 @@\n 2.0%0A\n-%09fmt.Printf(%22%25.1f%5Cn%22, media)%0A\n %09fmt\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_17-05-26",
+            "content": "@@ -170,16 +170,35 @@\n  media)%0A\n+%09fmt.Println(media)\n %0A    %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_17-06-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar num1 float64\n\tvar num2 float64\n\tvar media float64\n\tfmt.Scan(&num1, &num2)\n\tmedia = (num1 + num2) / 2.0\n\tfmt.Printf(\"%.1f\\n\", media)\n\n    \n}\n",
+            "lines": "12"
+        }
+    ]
+}

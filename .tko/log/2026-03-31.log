@@ -1,0 +1,44 @@
+2026-03-31 17:07:12, MOVE, v:1, k:fup@sobrou, mode:PICK
+2026-03-31 17:07:55, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:0
+2026-03-31 17:10:21, MOVE, v:1, k:fup@sobrou, mode:BACK
+2026-03-31 17:10:45, MOVE, v:1, k:fup@mumia, mode:DOWN
+2026-03-31 17:10:47, MOVE, v:1, k:fup@mumia, mode:PICK
+2026-03-31 17:10:49, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:5
+2026-03-31 17:15:11, MOVE, v:1, k:fup@mumia, mode:BACK
+2026-03-31 17:15:18, MOVE, v:1, k:fup@sobrou, mode:PICK
+2026-03-31 17:15:19, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:0, size:5
+2026-03-31 17:26:51, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:0, size:18
+2026-03-31 17:26:54, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:0
+2026-03-31 17:26:56, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:0
+2026-03-31 17:29:22, MOVE, v:1, k:fup@sobrou, mode:BACK
+2026-03-31 17:29:27, MOVE, v:1, k:fup@segundos, mode:DOWN
+2026-03-31 17:29:30, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-31 17:29:31, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:5
+2026-03-31 17:32:33, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-03-31 17:32:34, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-31 17:32:35, EXEC, v:1, k:fup@segundos, mode:LOCK, rate:0
+2026-03-31 17:32:38, EXEC, v:1, k:fup@segundos, mode:LOCK, rate:0
+2026-03-31 17:35:03, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-31 17:35:05, EXEC, v:1, k:fup@segundos, mode:LOCK, rate:0
+2026-03-31 17:35:06, EXEC, v:1, k:fup@segundos, mode:LOCK, rate:0
+2026-03-31 17:35:07, EXEC, v:1, k:fup@segundos, mode:LOCK, rate:0
+2026-03-31 17:36:05, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-03-31 17:36:11, MOVE, v:1, k:fup@celsius, mode:DOWN
+2026-03-31 17:36:12, MOVE, v:1, k:fup@celsius, mode:PICK
+2026-03-31 17:36:17, EXEC, v:1, k:fup@celsius, mode:FULL, rate:0, size:5
+2026-03-31 17:47:09, EXEC, v:1, k:fup@celsius, mode:FULL, size:9, fail:COMP
+2026-03-31 17:52:49, EXEC, v:1, k:fup@celsius, mode:FULL, size:8, fail:COMP
+2026-03-31 17:52:50, EXEC, v:1, k:fup@celsius, mode:FULL, fail:COMP
+2026-03-31 17:52:50, EXEC, v:1, k:fup@celsius, mode:FULL, fail:COMP
+2026-03-31 17:52:51, EXEC, v:1, k:fup@celsius, mode:FULL, fail:COMP
+2026-03-31 17:56:25, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-03-31 17:56:26, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0, size:5
+2026-03-31 17:56:31, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0
+2026-03-31 17:56:38, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0
+2026-03-31 17:58:02, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0, size:5
+2026-03-31 17:59:39, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, size:6, fail:COMP
+2026-03-31 18:00:09, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:01, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, size:13, fail:COMP
+2026-03-31 18:13:18, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, size:29, fail:COMP
+2026-03-31 18:13:42, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, size:29, fail:COMP
+2026-03-31 18:16:00, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, size:20, fail:COMP

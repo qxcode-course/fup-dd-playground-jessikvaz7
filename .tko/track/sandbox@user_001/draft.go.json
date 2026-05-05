@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_17-14-34",
+            "content": "@@ -54,80 +54,14 @@\n ln(%22\n-famigerado primeiro codigo%22)%0A    fmt.Println(%22famigerado primeiro codigo\n+qxcode\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-19-26",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -54,16 +54,79 @@\n ln(%22\n-ola mund\n+famigerado primeiro codigo%22)%0A    fmt.Println(%22famigerado primeiro codig\n o%22)%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-10_17-31-49",
+            "content": "@@ -39,31 +39,8 @@\n ) %7B%0A\n-    var num1, num2 int%0A\n     \n@@ -66,20 +66,8 @@\n ndo%22\n-, num1, num2\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-40-10",
+            "content": "@@ -58,35 +58,11 @@\n um2 \n-float64%0A    fmt.Scan(&num1)\n+int\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-10_17-43-11",
+            "content": "@@ -86,28 +86,8 @@\n m1)%0A\n-    fmt.Scan(&num2)%0A\n     \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-10_17-44-37",
+            "content": "@@ -61,17 +61,16 @@\n  float64\n- \n %0A    fmt\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-52-09",
+            "content": "@@ -81,18 +81,31 @@\n an(&num1\n-, \n+)%0A    fmt.Scan(\n &num2)%0A \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-55-58",
+            "content": "@@ -110,14 +110,26 @@\n tln(\n+%22ola mundo%22, \n num1\n- +\n+,\n  num\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-10_17-57-35",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var num1, num2 float64 \n    fmt.Scan(&num1, &num2)\n    fmt.Println(num1 + num2)\n}\n",
+            "lines": "9"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_18-04-56",
+            "content": "@@ -41,22 +41,28 @@\n     \n-var a, b, c int\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_18-09-03",
+            "content": "@@ -57,34 +57,6 @@\n int%0A\n-    fmt.Println(a + b + c)%0A%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_18-10-58",
+            "content": "@@ -31,11 +31,60 @@\n  main() \n+%7B%0A    var a, b, c int%0A    fmt.Println(a + b + c)%0A\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-53-37",
+            "content": "@@ -33,8 +33,9 @@\n ain() %0A%7D\n+%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-16_17-53-57",
+            "content": "@@ -3,16 +3,31 @@\n ckage ma\n+in%0Aimport %22fmt%22\n %0Afunc ma\n@@ -36,15 +36,5 @@\n () %0A\n-    fmt.p%0A%5D\n+%7D\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-16_18-07-59",
+            "content": "@@ -1,15 +1,18 @@\n package\n+ ma\n %0Afunc ma\n@@ -17,9 +17,19 @@\n main() %0A\n+    fmt.p%0A\n %5D\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-16_18-15-03",
+            "content": "@@ -4,141 +4,19 @@\n kage\n- main%0A%0Aimport %0A%0Afunc main() %7B%0A%09var a, b, c int%0A%0A%09fmt.Scanln(&a)%0A%09fmt.Scanln(&b)%0A%09fmt.Scanln(&c)%0A%0A%09soma := a + b + c%0A%0A%09fmt.Println(soma)%0A%7D\n+%0Afunc main() %0A%5D\n",
+            "lines": "3"
+        },
+        {
+            "label": "2026-03-17_14-28-40",
+            "content": "@@ -18,13 +18,8 @@\n ort \n-%22fmt%22\n %0A%0Afu\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-17_14-30-12",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, c int\n\n\tfmt.Scanln(&a)\n\tfmt.Scanln(&b)\n\tfmt.Scanln(&c)\n\n\tsoma := a + b + c\n\n\tfmt.Println(soma)\n}",
+            "lines": "15"
+        }
+    ]
+}

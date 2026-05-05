@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_18-06-56",
+            "content": "@@ -50,13 +50,26 @@\n rintln(%22\n+Hello, World!\n %22)%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-15-19",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,211 +41,22 @@\n     \n-var Q1,Q2,Q3 int%0A    var P1,P2,P3 float64%0A    var dinheiro float64%0A    fmt.Scan(&Q1)%0A    fmt.Scan(&Q2)%0A    fmt.Scan(&Q3)%0A    %0A    fmt.Scan(&P1)%0A    fmt.Scan(&P2)%0A    fmt.Scan(&P3)%0A%0A    fmt.Scan(&dinheiro\n+fmt.Println(%22%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-26-51",
+            "content": "@@ -47,17 +47,15 @@\n var \n-q1, q2, q\n+Q1,Q2,Q\n 3 in\n@@ -68,17 +68,15 @@\n var \n-v1, v2, v\n+P1,P2,P\n 3 fl\n@@ -109,24 +109,8 @@\n at64\n-%0A%0A    // Entrada\n %0A   \n@@ -120,17 +120,17 @@\n t.Scan(&\n-q\n+Q\n 1)%0A    f\n@@ -138,17 +138,17 @@\n t.Scan(&\n-q\n+Q\n 2)%0A    f\n@@ -160,12 +160,16 @@\n an(&\n-q\n+Q\n 3)%0A\n+    \n %0A   \n@@ -179,17 +179,17 @@\n t.Scan(&\n-v\n+P\n 1)%0A    f\n@@ -197,17 +197,17 @@\n t.Scan(&\n-v\n+P\n 2)%0A    f\n@@ -215,17 +215,17 @@\n t.Scan(&\n-v\n+P\n 3)%0A%0A    \n@@ -248,169 +248,6 @@\n ro)%0A\n-%0A    // C%C3%A1lculo%0A    total := float64(q1)*v1 + float64(q2)*v2 + float64(q3)*v3%0A    troco := dinheiro - total%0A%0A    // Sa%C3%ADda formatada%0A    fmt.Printf(%22%25.2f%5Cn%22, troco)%0A\n %7D\n+%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-05_18-47-48",
+            "content": "@@ -148,17 +148,16 @@\n q1)%0A    \n-%0A\n fmt.Scan\n@@ -180,16 +180,17 @@\n an(&q3)%0A\n+%0A\n     fmt.\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-05_18-49-46",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var q1, q2, q3 int\n    var v1, v2, v3 float64\n    var dinheiro float64\n\n    // Entrada\n    fmt.Scan(&q1)\n    \nfmt.Scan(&q2)\n    fmt.Scan(&q3)\n    fmt.Scan(&v1)\n    fmt.Scan(&v2)\n    fmt.Scan(&v3)\n\n    fmt.Scan(&dinheiro)\n\n    // C\u00e1lculo\n    total := float64(q1)*v1 + float64(q2)*v2 + float64(q3)*v3\n    troco := dinheiro - total\n\n    // Sa\u00edda formatada\n    fmt.Printf(\"%.2f\\n\", troco)\n}",
+            "lines": "27"
+        }
+    ]
+}

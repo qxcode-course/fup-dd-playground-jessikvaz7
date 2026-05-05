@@ -1,0 +1,15 @@
+2026-03-24 17:45:29, MOVE, v:1, k:sandbox@user_000, mode:PICK
+2026-03-24 17:47:13, MOVE, v:1, k:sandbox@user_000, mode:BACK
+2026-03-24 17:47:29, MOVE, v:1, k:sandbox@user_000, mode:PICK
+2026-03-24 17:47:30, EXEC, v:1, k:sandbox@user_000, mode:FULL, size:7, fail:COMP
+2026-03-24 17:47:31, EXEC, v:1, k:sandbox@user_000, mode:FULL, fail:COMP
+2026-03-24 17:47:32, EXEC, v:1, k:sandbox@user_000, mode:FULL, fail:COMP
+2026-03-24 17:47:34, MOVE, v:1, k:sandbox@user_000, mode:BACK
+2026-03-24 17:47:35, MOVE, v:1, k:sandbox@user_000, mode:PICK
+2026-03-24 18:01:30, MOVE, v:1, k:sandbox@user_000, mode:PICK
+2026-03-24 18:01:36, EXEC, v:1, k:sandbox@user_000, mode:LOCK, rate:100, size:9
+2026-03-24 18:01:38, MOVE, v:1, k:sandbox@user_000, mode:BACK
+2026-03-24 18:01:50, MOVE, v:1, k:sandbox@user_000, mode:PICK
+2026-03-24 18:01:51, EXEC, v:1, k:sandbox@user_000, mode:LOCK, rate:100
+2026-03-24 18:01:53, EXEC, v:1, k:sandbox@user_000, mode:LOCK, rate:100
+2026-03-24 18:01:55, MOVE, v:1, k:sandbox@user_000, mode:BACK

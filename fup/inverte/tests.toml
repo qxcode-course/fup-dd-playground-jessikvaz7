@@ -1,0 +1,63 @@
+[[tests]]
+input = '''
+a
+'''
+output = '''
+A
+'''
+
+[[tests]]
+input = '''
+B
+'''
+output = '''
+b
+'''
+
+[[tests]]
+input = '''
+5
+'''
+output = '''
+5
+'''
+
+[[tests]]
+input = '''
+!
+'''
+output = '''
+!
+'''
+
+[[tests]]
+input = '''
+X
+'''
+output = '''
+x
+'''
+
+[[tests]]
+input = '''
+c
+'''
+output = '''
+C
+'''
+
+[[tests]]
+input = '''
+-
+'''
+output = '''
+-
+'''
+
+[[tests]]
+input = '''
+@
+'''
+output = '''
+@
+'''

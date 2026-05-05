@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_18-12-59",
+            "content": "@@ -37,23 +37,8 @@\n ) %7B%0A\n-    var 115 = %0A\n     \n@@ -50,13 +50,19 @@\n rintln(%22\n+qxcode\n %22)%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_18-18-19",
+            "content": "@@ -1,53 +1,31 @@\n-qpackage main%0Aimport %22fmt%22%0Afunc main() %7B%0A   \n+@@ -45,29 +45,13 @@%0A\n  var \n+%0A-\n bomb\n@@ -45,33 +45,75 @@\n  int\n- %0A    fmt.Prin\n+%0A+115 =%0A  %250A  %0A@@ -68,15 +68,10 @@%0A \n tln(\n+%0A-\n bombons\n-)%0A%7D\n+%0A+%2522%2522%0A )%250A%257D%250A\n %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-23_19-34-06",
+            "content": "@@ -1,8 +1,9 @@\n+q\n package \n@@ -77,87 +77,22 @@\n fmt.\n-Scan(&bombons, &criancas)%0A    fmt.Println(bombons / criancas, bombons %25 crianca\n+Println(bombon\n s)%0A%7D\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-23_19-42-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var bombons, criancas int \n    fmt.Scan(&bombons, &criancas)\n    fmt.Println(bombons / criancas, bombons % criancas)\n}\n",
+            "lines": "7"
+        }
+    ]
+}
