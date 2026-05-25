@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-33-21",
+            "content": "@@ -246,10 +246,8 @@\n )%0A    %7D%0A\n-%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-05_17-34-52",
+            "content": "@@ -47,16 +47,14 @@\n var \n-s string\n+c rune\n %0A   \n@@ -67,34 +67,11 @@\n Scan\n-ln(&s)%0A     c := rune(s%5B0%5D\n+(&c\n )%0A%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-05_17-53-10",
+            "content": "@@ -139,26 +139,24 @@\n t.Printf(%22%25c\n-%5Cn\n %22, c - 32)%0A \n@@ -204,32 +204,29 @@\n    fmt.Print\n-ln\n+f\n (%22%25c\n-%5Cn\n %22, c + 32)%0A \n@@ -258,16 +258,13 @@\n rint\n-ln\n+f\n (%22%25c\n-%5Cn\n %22, c\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-56-17",
+            "content": "@@ -202,33 +202,34 @@\n        fmt.Print\n-f\n+ln\n (%22%25c%5Cn%22, c + 32)\n@@ -251,33 +251,34 @@\n        fmt.Print\n-f\n+ln\n (%22%25c%5Cn%22, c)%0A    \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-57-05",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var s string\n     fmt.Scanln(&s)\n     c := rune(s[0])\n\n    if c >= 'a' && c <= 'z' {\n     fmt.Printf(\"%c\\n\", c - 32)\n    } else if c >= 'A' && c <= 'Z' {\n        fmt.Printf(\"%c\\n\", c + 32)\n    } else {\n        fmt.Printf(\"%c\\n\", c)\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}

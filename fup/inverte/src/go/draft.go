@@ -3,13 +3,15 @@ package main
 import "fmt"
 
 func main() {
-    var c rune
-     fmt.Scan(&c)
-    if c >= 'A' && c <= 'Z' {
-     fmt.Printf("%c", c - 32)
-    } else if c >= 'A' && c <= 'Z' {
-        fmt.Printf("%C", cc + 32)
-        fmt.Printf("%c, c")
-    } else {
+    var s string
+     fmt.Scanln(&s)
+     c := rune(s[0])
 
+    if c >= 'a' && c <= 'z' {
+     fmt.Printf("%c\n", c - 32)
+    } else if c >= 'A' && c <= 'Z' {
+        fmt.Printf("%c\n", c + 32)
+    } else {
+        fmt.Printf("%c\n", c)
+    }
 }

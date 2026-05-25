@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_04-39-08",
+            "content": "@@ -45,15 +45,14 @@\n ar n\n-um\n  int%0A\n+%0A\n %09fmt\n@@ -60,24 +60,19 @@\n Scan\n-ln\n (&n\n-um)%0A \n+)%0A%0A%09\n if n\n-um\n  == \n@@ -81,18 +81,16 @@\n %7C%7C n\n-um\n  == 5 %7B%0A\n %09fmt\n@@ -85,16 +85,17 @@\n  == 5 %7B%0A\n+%09\n %09fmt.Pri\n@@ -106,17 +106,17 @@\n (%22SIM%22)%0A\n- \n+%09\n %7D else %7B\n@@ -116,16 +116,17 @@\n  else %7B%0A\n+%09\n %09fmt.Pri\n@@ -141,10 +141,9 @@\n O%22)%0A\n-  \n+%09\n %7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-11_17-18-09",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num int\n\tfmt.Scanln(&num)\n if num == 3 || num == 5 {\n\tfmt.Println(\"SIM\")\n } else {\n\tfmt.Println(\"NAO\")\n  }\n}\n",
+            "lines": "13"
+        }
+    ]
+}

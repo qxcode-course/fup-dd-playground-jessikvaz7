@@ -1,0 +1,69 @@
+[[tests]]
+input = '''
+Coralina
+0
+4
+'''
+output = '''
+Cora
+'''
+
+[[tests]]
+input = '''
+Coralina
+1
+4
+'''
+output = '''
+oral
+'''
+
+[[tests]]
+input = '''
+Power Ranger
+4
+20
+'''
+output = '''
+r Ranger
+'''
+
+[[tests]]
+input = '''
+Coralina
+0
+1
+'''
+output = '''
+C
+'''
+
+[[tests]]
+input = '''
+Coralina
+1
+1
+'''
+output = '''
+o
+'''
+
+[[tests]]
+input = '''
+Power Ranger
+4
+30
+'''
+output = '''
+r Ranger
+'''
+
+[[tests]]
+input = '''
+Decoracao
+4
+5
+'''
+output = '''
+racao
+'''

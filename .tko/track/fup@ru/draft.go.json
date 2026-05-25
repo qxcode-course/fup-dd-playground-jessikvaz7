@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_06-25-18",
+            "content": "@@ -18,122 +18,75 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)\n+%22fmt%22%0A%0Afunc main() %7B%0A%09var frase string\n %0A%0A%09f\n-rase, _ := reader.ReadString('%5Cn'\n+mt.Scanf(%22%25%5B%5E%5Cn%5D%22, &frase\n )%0A%0A%09\n@@ -170,25 +170,8 @@\n  ' '\n- %7C%7C letra == '%5Cn'\n  %7B%0A%09\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-11_06-26-07",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tfrase, _ := reader.ReadString('\\n')\n\n\tvogais := \"\"\n\tconsoantes := \"\"\n\n\tfor _, letra := range frase {\n\n\t\tif letra == ' ' || letra == '\\n' {\n\t\t\tcontinue\n\t\t}\n\n\t\tif letra == 'a' ||\n\t\t\tletra == 'e' ||\n\t\t\tletra == 'i' ||\n\t\t\tletra == 'o' ||\n\t\t\tletra == 'u' {\n\n\t\t\tvogais += string(letra)\n\n\t\t} else {\n\n\t\t\tconsoantes += string(letra)\n\t\t}\n\t}\n\n\tfmt.Println(vogais)\n\tfmt.Println(consoantes)\n}\n",
+            "lines": "39"
+        }
+    ]
+}

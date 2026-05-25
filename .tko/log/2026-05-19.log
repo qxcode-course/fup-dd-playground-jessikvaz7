@@ -1,0 +1,50 @@
+2026-05-19 17:06:04, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-05-19 17:06:08, EXEC, v:1, k:fup@quantos, mode:FULL, rate:100
+2026-05-19 17:09:43, MOVE, v:1, k:fup@quantos, mode:BACK
+2026-05-19 17:06:07, MOVE, v:1, k:fup@quantos, mode:EDIT
+2026-05-19 17:11:23, SELF, v:1, k:fup@quantos, self:1, rate:100, concept:1, code:1, debug:1, refactor:1
+2026-05-19 17:11:52, MOVE, v:1, k:fup@impar, mode:DOWN
+2026-05-19 17:11:54, MOVE, v:1, k:fup@impar, mode:PICK
+2026-05-19 17:11:52, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:11:52, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:13:10, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:20:31, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:25:31, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:29:58, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:35:05, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:39:53, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:47:38, EXEC, v:1, k:fup@impar, mode:FULL, rate:42, size:22
+2026-05-19 17:50:36, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:47:38, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:54:59, EXEC, v:1, k:fup@impar, mode:FULL, rate:57, size:27
+2026-05-19 17:54:05, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:54:59, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:58:28, EXEC, v:1, k:fup@impar, mode:FULL, rate:57, size:26
+2026-05-19 17:59:48, EXEC, v:1, k:fup@impar, mode:FULL, rate:100, size:27
+2026-05-19 17:59:43, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 17:59:48, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-19 18:01:23, MOVE, v:1, k:fup@impar, mode:BACK
+2026-05-19 18:01:55, SELF, v:1, k:fup@impar, self:1, rate:100, concept:1, code:1, debug:1, refactor:1
+2026-05-19 18:02:39, MOVE, v:1, k:fup@mumia, mode:PICK
+2026-05-19 18:08:55, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:11
+2026-05-19 18:08:55, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:08:55, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:15:30, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:16:25, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:30:38, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:35:35, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:23
+2026-05-19 18:35:33, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:35:34, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:36:09, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:23
+2026-05-19 18:36:44, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:23
+2026-05-19 18:38:21, EXEC, v:1, k:fup@mumia, mode:FULL, rate:55, size:23
+2026-05-19 18:40:37, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:38:21, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:41:13, EXEC, v:1, k:fup@mumia, mode:FULL, size:23, fail:COMP
+2026-05-19 18:41:15, EXEC, v:1, k:fup@mumia, mode:FULL, fail:COMP
+2026-05-19 18:42:27, EXEC, v:1, k:fup@mumia, mode:FULL, rate:88, size:23
+2026-05-19 18:44:21, EXEC, v:1, k:fup@mumia, mode:FULL, rate:100, size:23
+2026-05-19 18:44:38, MOVE, v:1, k:fup@mumia, mode:BACK
+2026-05-19 18:45:11, SELF, v:1, k:fup@mumia, self:1, rate:100, concept:1, code:1, debug:1, refactor:1
+2026-05-19 18:44:16, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-19 18:44:21, MOVE, v:1, k:fup@mumia, mode:EDIT

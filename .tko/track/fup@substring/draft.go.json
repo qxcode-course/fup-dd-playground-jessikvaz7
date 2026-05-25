@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-09_18-16-08",
+            "content": "@@ -82,18 +82,17 @@\n fmt.Scan\n-ln\n+f\n (%22%25%5B%5E%5Cn%5D\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-09_18-18-55",
+            "content": "@@ -35,17 +35,16 @@\n ain() %7B%0A\n-%0A\n     var \n@@ -85,16 +85,28 @@\n .Scanln(\n+%22%25%5B%5E%5Cn%5D%5Cn%22, \n &s)%0A    \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-09_18-19-49",
+            "content": "@@ -75,39 +75,8 @@\n nt%0A%0A\n-    fmt.Scanf(%22%25%5B%5E%5Cn%5D%5Cn%22, &s)%0A%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-09_18-21-52",
+            "content": "@@ -96,16 +96,18 @@\n %5E%5Cn%5D\n+%5Cn\n %22, &s)%0A%0A\n     \n@@ -102,16 +102,35 @@\n %22, &s)%0A%0A\n+    fmt.Scanln(&s)%0A\n     fmt.\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-09_18-24-20",
+            "content": "@@ -18,226 +18,137 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09s, _ := reader.ReadString('%5Cn')%0A%09s = strings.TrimSpace(s)%0A%0A%09var i, q int%0A%0A%09\n+%22fmt%22%0A%0Afunc main() %7B%0A%0A    var s string%0A    var q, i int%0A%0A    fmt.Scanf(%22%25%5B%5E%5Cn%5D%22, &s)%0A%0A    \n fmt.\n-Fs\n+S\n canln(\n-reader, &i)%0A%09\n+&i)%0A    \n fmt.\n-Fs\n+S\n canln(\n-reader, \n &q)%0A%0A\n-%09\n+    \n if i\n@@ -169,18 +169,24 @@\n en(s) %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -193,30 +193,42 @@\n tln(%22%22)%0A\n-%09%09return%0A%09%7D%0A%0A%09\n+        return%0A    %7D%0A%0A    \n if q %3C= \n@@ -231,18 +231,24 @@\n  %3C= 0 %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -259,22 +259,34 @@\n %22%22)%0A\n-%09%09return%0A%09%7D%0A%0A%09\n+        return%0A    %7D%0A%0A    \n fim \n@@ -295,17 +295,20 @@\n  i + q%0A%0A\n-%09\n+    \n if fim %3E\n@@ -321,10 +321,16 @@\n ) %7B%0A\n-%09%09\n+        \n fim \n@@ -342,13 +342,46 @@\n (s)%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    resultado := s%5Bi:fim%5D%0A%0A    \n fmt.\n@@ -388,20 +388,21 @@\n Println(\n-s%5Bi:fim%5D\n+resultado\n )%0A%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-09_18-25-06",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\n\treader := bufio.NewReader(os.Stdin)\n\n\ts, _ := reader.ReadString('\\n')\n\ts = strings.TrimSpace(s)\n\n\tvar i, q int\n\n\tfmt.Fscanln(reader, &i)\n\tfmt.Fscanln(reader, &q)\n\n\tif i < 0 || i >= len(s) {\n\t\tfmt.Println(\"\")\n\t\treturn\n\t}\n\n\tif q <= 0 {\n\t\tfmt.Println(\"\")\n\t\treturn\n\t}\n\n\tfim := i + q\n\n\tif fim > len(s) {\n\t\tfim = len(s)\n\t}\n\n\tfmt.Println(s[i:fim])\n}\n",
+            "lines": "39"
+        }
+    ]
+}

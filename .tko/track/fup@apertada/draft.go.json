@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_17-00-00",
+            "content": "@@ -29,24 +29,12 @@\n nc m\n-enorindice (arr \n+ain(\n ) %7B%0A\n@@ -114,154 +114,8 @@\n i%5D)%0A\n-    %7D%0A%7D%0A     fmt.Println(arr)%0A    imin := 0%0A    for i := 1; i %3C len(arr); i++ %7B%0A        if arr%5Bi%5D %3C arr %5Bimin%5D %7B%0A            imin = i%0A        %7D%0A    %7D\n+%0A%7D%0A\n %0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-18_17-22-41",
+            "content": "package main\nimport \"fmt\"\nfunc menorindice (arr ) {\n    arr := make([]int, 5)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n}\n     fmt.Println(arr)\n    imin := 0\n    for i := 1; i < len(arr); i++ {\n        if arr[i] < arr [imin] {\n            imin = i\n        }\n    }\n",
+            "lines": "15"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_03-07-06",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar x1, y1, x2, y2 float64\n\n\tfmt.Scan(&x1, &y1)\n\tfmt.Scan(&x2, &y2)\n\n\tdistancia := math.Sqrt(\n\t\tmath.Pow(x2-x1, 2) +\n\t\t\tmath.Pow(y2-y1, 2),\n\t)\n\n\tfmt.Printf(\"%.2f\\n\", distancia)\n}\n\n",
+            "lines": "21"
+        }
+    ]
+}

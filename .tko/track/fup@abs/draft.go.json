@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_03-41-15",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,170 +23,53 @@\n mt%22%0A\n-%0Afunc abs(n int) int %7B%0A%09if n %3C 0 %7B%0A%09%09return n * -1%0A%09%7D%0A%0A%09return n%0A%7D%0A%0Afunc main() %7B%0A%09var a, b int%0A%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%0A%09dif := a - b%0A%0A%09fmt.Println(abs(dif)\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-11_03-57-55",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc abs(n int) int {\n\tif n < 0 {\n\t\treturn n * -1\n\t}\n\n\treturn n\n}\n\nfunc main() {\n\tvar a, b int\n\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tdif := a - b\n\n\tfmt.Println(abs(dif))\n}\n",
+            "lines": "22"
+        }
+    ]
+}

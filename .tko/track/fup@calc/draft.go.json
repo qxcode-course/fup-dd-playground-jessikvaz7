@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_17-55-14",
+            "content": "@@ -83,17 +83,17 @@\n  string%0A\n-%0A\n+ \n     fmt.\n@@ -99,16 +99,17 @@\n .Scanln(\n+ \n &n1, &n2\n@@ -116,44 +116,27 @@\n , &S\n+ \n )%0A\n-%0A    switch S %7B%0A    case %22+%22:%0A    \n+  if S == %22+%22 %7B%0A\n     \n@@ -162,24 +162,29 @@\n )%0A  \n-  case %22-%22:%0A    \n+%7D else if S == %22-%22 %7B%0A\n     \n@@ -210,24 +210,29 @@\n )%0A  \n-  case %22*%22:%0A    \n+%7D else if S == %22*%22 %7B%0A\n     \n@@ -258,24 +258,29 @@\n )%0A  \n-  case %22/%22:%0A    \n+%7D else if S == %22/%22 %7B%0A\n     \n@@ -307,9 +307,16 @@\n %0A   \n- %7D%0A%7D\n+%7D%0A  %7D  %0A   \n %0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-11_18-02-42",
+            "content": "@@ -106,45 +106,15 @@\n (&n1\n-)%0A    fmt.Scanln(&n2)%0A    fmt.Scanln(\n+, &n2, \n &S)%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_18-03-45",
+            "content": "@@ -152,21 +152,32 @@\n     \n-if S ==\n+switch S %7B%0A    case\n  %22+%22\n- %7B\n+:\n %0A   \n@@ -210,28 +210,17 @@\n     \n-%7D else if S ==\n+case\n  %22-%22\n- %7B\n+:\n %0A   \n@@ -253,28 +253,17 @@\n     \n-%7D else if S ==\n+case\n  %22*%22\n- %7B\n+:\n %0A   \n@@ -296,28 +296,17 @@\n     \n-%7D else if S ==\n+case\n  %22/%22\n- %7B\n+:\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-11_18-05-14",
+            "content": "@@ -152,32 +152,21 @@\n     \n-switch S %7B%0A    case\n+if S ==\n  %22+%22\n-:\n+ %7B\n %0A   \n@@ -199,17 +199,28 @@\n     \n-case\n+%7D else if S ==\n  %22-%22\n-:\n+ %7B\n %0A   \n@@ -253,17 +253,28 @@\n     \n-case\n+%7D else if S ==\n  %22*%22\n-:\n+ %7B\n %0A   \n@@ -307,17 +307,28 @@\n     \n-case\n+%7D else if S ==\n  %22/%22\n-:\n+ %7B\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_18-05-50",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\n    var n1 int\n    var n2 int\n    var S string\n\n    fmt.Scanln(&n1)\n    fmt.Scanln(&n2)\n    fmt.Scanln(&S)\n\n    switch S {\n    case \"+\":\n        fmt.Println(n1 + n2)\n    case \"-\":\n        fmt.Println(n1 - n2)\n    case \"*\":\n        fmt.Println(n1 * n2)\n    case \"/\":\n        fmt.Println(n1 / n2)\n    }\n}\n",
+            "lines": "25"
+        }
+    ]
+}

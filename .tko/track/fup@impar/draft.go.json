@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-47-38",
+            "content": "@@ -56,25 +56,24 @@\n  D2 int%0A    \n- \n fmt.Scanln(&\n@@ -75,17 +75,16 @@\n nln(&P)%0A\n- \n     fmt.\n@@ -95,17 +95,16 @@\n ln(&D1)%0A\n- \n     fmt.\n@@ -120,17 +120,16 @@\n 2)%0A%0A    \n- \n soma := \n@@ -136,17 +136,16 @@\n D1 + D2%0A\n- \n     if s\n@@ -155,25 +155,24 @@\n  %25 2 == 0 %7B%0A\n- \n     if P == \n@@ -175,25 +175,24 @@\n  == 0 %7B%0A    \n- \n fmt.Println(\n@@ -186,32 +186,36 @@\n  fmt.Println(0)%0A\n+    \n %7D else %7B%0A     fm\n@@ -203,25 +203,24 @@\n    %7D else %7B%0A\n- \n     fmt.Prin\n@@ -230,16 +230,15 @@\n (1)%0A\n- \n+%7D%0A\n     %7D\n-%0A%7D\n  els\n@@ -279,91 +279,14 @@\n    %0A\n-  %0A%7D   %0A     if P == 1 %7B%0A      fmt.Println(0)%0A%7D else %7B%0A      fmt.Println(1)   %0A %7D  \n+%0A    %7D\n  %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_17-54-59",
+            "content": "@@ -234,11 +234,15 @@\n (1)%0A\n+     \n %7D%0A\n- \n %7D el\n@@ -281,12 +281,18 @@\n     \n+ \n+ %0A  \n %0A%7D  \n+ \n %0A   \n@@ -326,17 +326,16 @@\n ntln(0)%0A\n- \n %7D else %7B\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_17-58-28",
+            "content": "@@ -274,16 +274,18 @@\n        %0A\n+%7D \n  %0A     i\n@@ -354,16 +354,12 @@\n    %0A\n- \n  %7D   %0A\n- %7D%0A\n %7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-19_17-59-48",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\n  var P, D1, D2 int\n     fmt.Scanln(&P)\n     fmt.Scanln(&D1)\n     fmt.Scanln(&D2)\n\n     soma := D1 + D2\n     if soma % 2 == 0 {\n     if P == 0 {\n     fmt.Println(0)\n} else {\n     fmt.Println(1)\n}\n } else {                                \n \n     if P == 1 {\n      fmt.Println(0)\n } else {\n      fmt.Println(1)   \n  }   \n }\n}\n",
+            "lines": "27"
+        }
+    ]
+}

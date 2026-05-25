@@ -1,0 +1,15 @@
+2026-05-09 18:13:56, MOVE, v:1, k:fup@substring, mode:PICK
+2026-05-09 18:16:08, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:32
+2026-05-09 18:18:09, EXEC, v:1, k:fup@substring, mode:FULL, rate:0
+2026-05-09 18:18:05, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-05-09 18:18:09, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-05-09 18:18:55, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:32
+2026-05-09 18:19:49, EXEC, v:1, k:fup@substring, mode:FULL, rate:71, size:33
+2026-05-09 18:21:52, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:35
+2026-05-09 18:21:56, EXEC, v:1, k:fup@substring, mode:FULL, rate:0
+2026-05-09 18:21:50, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-05-09 18:21:55, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-05-09 18:24:20, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:34
+2026-05-09 18:25:06, EXEC, v:1, k:fup@substring, mode:FULL, rate:100, size:39
+2026-05-09 18:25:05, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-05-09 18:25:06, MOVE, v:1, k:fup@substring, mode:EDIT

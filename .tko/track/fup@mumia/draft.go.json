@@ -2,8 +2,48 @@
     "patches": [
         {
             "label": "2026-03-31_17-10-49",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,90 +37,39 @@\n ) %7B%0A\n-%0A\n     \n-var nome string%0A    var idade int%0A    fmt.Scanln(&nome)%0A    fmt.Scanln(&idade\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-19_18-08-55",
+            "content": "@@ -123,248 +123,6 @@\n de)%0A\n- if idade %3C12 %7B%0A    fmt.Println(%22nome, eh, crianca%22)%0A%7D else if idade %3C18 %7B%0A    fmt.Println(%22nome, eh, jovem%22)%0A%7D else if idade %3C65 %7B%0A    fmt.Println(%22nome, eh, adulto%22)%0A%7D else if idade %3C1000 %7B%0A    fmt.Println(%22nome, eh, idoso%22)%0A%0A%7D else %7B%0A %7D%0A%7D %0A\n+%7D\n %0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-19_18-35-35",
+            "content": "@@ -49,19 +49,22 @@\n ar nome \n+str\n in\n-t\n+g\n %0A    var\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-19_18-36-09",
+            "content": "@@ -53,14 +53,11 @@\n ome \n-str\n in\n-g\n+t\n %0A   \n@@ -153,19 +153,21 @@\n ln(%22nome\n+,\n  eh\n+,\n  crianca\n@@ -212,19 +212,21 @@\n ln(%22nome\n+,\n  eh\n+,\n  jovem%22)\n@@ -269,19 +269,21 @@\n ln(%22nome\n+,\n  eh\n+,\n  adulto%22\n@@ -329,19 +329,21 @@\n ln(%22nome\n+,\n  eh\n+,\n  idoso%22)\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-19_18-36-44",
+            "content": "@@ -156,13 +156,12 @@\n ln(%22\n-mario\n+nome\n  eh \n@@ -213,15 +213,12 @@\n ln(%22\n-mariana\n+nome\n  eh \n@@ -268,14 +268,12 @@\n ln(%22\n-marina\n+nome\n  eh \n@@ -326,11 +326,11 @@\n ln(%22\n-jos\n+nom\n e eh\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-19_18-38-21",
+            "content": "@@ -151,28 +151,26 @@\n Println(\n-nome %22eh%22, %22\n+%22mario eh \n crianca%22\n@@ -209,28 +209,28 @@\n Println(\n-nome %22eh%22, %22\n+%22mariana eh \n jovem%22)%0A\n@@ -267,28 +267,27 @@\n Println(\n-nome %22eh%22, %22\n+%22marina eh \n adulto%22)\n@@ -331,20 +331,17 @@\n tln(\n-nom\n+%22jos\n e \n-%22\n eh\n-%22, %22\n+ \n idos\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-19_18-41-13",
+            "content": "@@ -147,33 +147,32 @@\n fmt.Println(nome\n-,\n  %22eh%22, %22crianca%22\n@@ -207,33 +207,32 @@\n fmt.Println(nome\n-,\n  %22eh%22, %22jovem%22)%0A\n@@ -265,33 +265,32 @@\n fmt.Println(nome\n-,\n  %22eh%22, %22adulto%22)\n@@ -334,17 +334,16 @@\n tln(nome\n-,\n  %22eh%22, %22\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-19_18-42-27",
+            "content": "@@ -350,24 +350,25 @@\n %22, %22idoso%22)%0A\n+%0A\n %7D else %7B%0A   \n@@ -368,45 +368,8 @@\n e %7B%0A\n-    fmt.Println(nome, %22eh%22, %22mumia%22)%0A\n  %7D%0A%7D\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-19_18-44-21",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\n    var nome string\n    var idade int\n    fmt.Scanln(&nome)\n    fmt.Scanln(&idade)\n if idade <12 {\n    fmt.Println(nome, \"eh\", \"crianca\")\n} else if idade <18 {\n    fmt.Println(nome, \"eh\", \"jovem\")\n} else if idade <65 {\n    fmt.Println(nome, \"eh\", \"adulto\")\n} else if idade <1000 {\n    fmt.Println(nome, \"eh\", \"idoso\")\n} else {\n    fmt.Println(nome, \"eh\", \"mumia\")\n }\n} \n\n",
+            "lines": "23"
         }
     ]
 }
