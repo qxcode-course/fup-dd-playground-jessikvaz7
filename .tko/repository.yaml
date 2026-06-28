@@ -13,26 +13,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@rec
-- fup@if2
-- fup@dict
-- fup@list
-- fup@for2
-- fup@for_extra
-- fup@games
-- fup@if_extra
-- fup@if1
-- fup@for1
-- fup@struct
-- fup@mat
 - fup@base
-- fup@string
 flags:
   inbox: all
   panel: skills
-  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
+audit:
+  enabled: true
+  interval_seconds: null
 lang: go
-selected: fup@meio
-selected_index: 26
+selected: fup@base
+selected_index: 0

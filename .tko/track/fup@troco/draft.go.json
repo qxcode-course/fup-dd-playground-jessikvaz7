@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_17-31-16",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\n    var troco float64\n\n    fmt.Scan(&troco)\n    \n    vetor := []float64{100.00, 50.00, 20.0, 10.0, 2.00, 1.00, 0.50, 0.25, 0.10, 0.5}\n\n    cedulas := make([]int, len(vetor))\n\n    for troco > 0 || troco > 0.5 {\n    for i := 0; i < len(vetor); i++ {\n    if(troco >= vetor[i]) {\n      cedulas[i] = (int) (troco/(vetor[i]))\n     } else {\n        cedulas[i] = 0;\n\n     }\n   }  \n  }\n}\n",
+            "lines": "25"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+2026-06-09 17:02:36, MOVE, v:1, k:fup@troco, mode:DOWN
+2026-06-09 17:02:37, MOVE, v:1, k:fup@troco, mode:PICK
+2026-06-09 17:02:36, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:02:36, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:02:36, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:06:03, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:07:07, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:16:11, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:21:10, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:25:18, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:31:12, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:31:16, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:25
+2026-06-09 17:31:20, EXEC, v:1, k:fup@troco, mode:FULL, rate:0
+2026-06-09 17:31:16, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:36:49, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:45:57, MOVE, v:1, k:fup@troco, mode:BACK
+2026-06-09 17:46:11, MOVE, v:1, k:fup@parkour, mode:DOWN
+2026-06-09 17:46:13, MOVE, v:1, k:fup@parkour, mode:PICK
+2026-06-09 17:46:11, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-09 17:46:11, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-09 17:46:11, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-09 18:05:53, MOVE, v:1, k:fup@parkour, mode:BACK
+2026-06-09 18:07:02, MOVE, v:1, k:fup@jedi, mode:DOWN
+2026-06-09 18:07:04, MOVE, v:1, k:fup@jedi, mode:PICK
+2026-06-09 18:07:02, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-06-09 18:07:02, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-06-09 18:18:12, MOVE, v:1, k:fup@jedi, mode:BACK
+2026-06-09 18:19:05, MOVE, v:1, k:fup@xuxa, mode:PICK
+2026-06-09 18:19:23, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:100
+2026-06-09 18:19:23, MOVE, v:1, k:fup@xuxa, mode:EDIT

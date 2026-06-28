@@ -1,0 +1,13 @@
+2026-05-26 17:02:37, MOVE, v:1, k:fup@fatores_struct, mode:DOWN
+2026-05-26 18:03:31, MOVE, v:1, k:fup@blackjack, mode:DOWN
+2026-05-26 18:03:31, MOVE, v:1, k:fup@blackjack, mode:PICK
+2026-05-26 18:03:30, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-26 18:03:31, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-26 18:03:31, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-26 18:21:12, MOVE, v:1, k:fup@blackjack, mode:BACK
+2026-05-26 18:21:17, MOVE, v:1, k:fup@botas, mode:PICK
+2026-05-26 18:24:26, MOVE, v:1, k:fup@botas, mode:EDIT
+2026-05-26 18:29:29, MOVE, v:1, k:fup@botas, mode:EDIT
+2026-05-26 18:34:24, MOVE, v:1, k:fup@botas, mode:EDIT
+2026-05-26 18:37:52, EXEC, v:1, k:fup@botas, mode:FULL, size:46, fail:COMP
+2026-05-26 18:38:41, MOVE, v:1, k:fup@botas, mode:EDIT

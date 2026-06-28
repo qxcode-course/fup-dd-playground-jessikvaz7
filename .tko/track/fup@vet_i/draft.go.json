@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_13-52-18",
+            "content": "@@ -62,18 +62,16 @@\n fmt.Scan\n-ln\n (&N)%0A%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-15_13-56-53",
+            "content": "@@ -146,18 +146,16 @@\n fmt.Scan\n-ln\n (&numero\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-15_13-57-03",
+            "content": "@@ -35,17 +35,21 @@\n ain() %7B%0A\n-%09\n+     \n var N in\n@@ -50,17 +50,20 @@\n r N int%0A\n-%09\n+    \n fmt.Scan\n@@ -70,17 +70,20 @@\n ln(&N)%0A%0A\n-%09\n+    \n numeros \n@@ -101,17 +101,20 @@\n nt, N)%0A%0A\n-%09\n+    \n for i :=\n@@ -126,26 +126,32 @@\n  %3C N; i++ %7B%0A\n-%09%09\n+        \n fmt.Scanln(&\n@@ -166,13 +166,19 @@\n i%5D)%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    \n for \n@@ -202,10 +202,16 @@\n + %7B%0A\n-%09%09\n+        \n fmt.\n@@ -234,9 +234,12 @@\n i%5D)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-15_13-59-00",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tfmt.Scanln(&N)\n\n\tnumeros := make([]int, N)\n\n\tfor i := 0; i < N; i++ {\n\t\tfmt.Scanln(&numeros[i])\n\t}\n\n\tfor i := 0; i < N; i++ {\n\t\tfmt.Println(numeros[i])\n\t}\n}\n",
+            "lines": "18"
+        }
+    ]
+}

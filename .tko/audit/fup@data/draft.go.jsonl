@@ -1,0 +1,10 @@
+{"ts":1782514987,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"full","content":"H4sIADAFP2oC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC+gKDOvJCdPQ8kjNScnX0chPL8oJ0VRSZOrlgsAdYpEcEsAAAA="}
+{"ts":1782515071,"hash":"9eedefe73a2ada1341380267c34ce635812933165277994eaf766453762b55c4","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"    var hora,\n"}]}
+{"ts":1782515092,"hash":"e84bc8d4c7f0b3fb5db81a631ab75f9a369d1a7b7a7d7fc94c56f966bdde1005","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"    var hora, minuto, dia, mes, ano int\n    \n"}]}
+{"ts":1782515112,"hash":"aa80e0e33f95676eba3d6f29e447f45ec578df13addac5fb68813e3e5b2adcb1","mode":"diff","ops":[{"tag":"insert","a1":4,"a2":4,"text":"    fmt.Scan(&hora)\n"}]}
+{"ts":1782515152,"hash":"3ca37629db8a53afa182a6599e8235f40bce11cf6fe261adb0e4aebeaf7676c1","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    fmt.Scan(&minuto)\n    fmt.Scan(&dia)\n    fmt.Scan(&mes)\n"}]}
+{"ts":1782515192,"hash":"0aea8381bbbf89adff1d8dc7f37de690fb2fab17e1c64d0f927c4c5b4f6f09ec","mode":"diff","ops":[{"tag":"insert","a1":4,"a2":4,"text":"\n"},{"tag":"insert","a1":8,"a2":8,"text":"    fmt.Scan(&ano)\n\n    fmt.Printf(\"\")\n"}]}
+{"ts":1782515232,"hash":"a51805d86412f6b8206806cde52df843c817be93cd2d748feb890667eb9336ea","mode":"diff","ops":[{"tag":"replace","a1":11,"a2":12,"text":"    fmt.Printf(\"%0:%02d\")\n"}]}
+{"ts":1782515267,"hash":"6426d123bfcac9e1d7e29023708d85d90f3d8177465fe01ae338f13ba0d96d5b","mode":"diff","ops":[{"tag":"replace","a1":11,"a2":12,"text":"    fmt.Printf(\"%02d:%02d %02d/%02d/%02d)\n"}]}
+{"ts":1782515290,"hash":"99c669e1b68b7fd2792005a9093f10c1005a10f4d9d9c7741fdb9a47c48b4c78","mode":"diff","ops":[{"tag":"replace","a1":11,"a2":12,"text":"    fmt.Printf(\"%02d:%02d %02d/%02d/%02d\\n\")\n"}]}
+{"ts":1782515311,"hash":"566eefc59b654d826829a9516dceb52ebc144b4f8333146e8952214802bea3e5","mode":"diff","ops":[{"tag":"replace","a1":11,"a2":12,"text":"    fmt.Printf(\"%02d:%02d %02d/%02d/%02d\\n\", hora, minut)\n"}]}

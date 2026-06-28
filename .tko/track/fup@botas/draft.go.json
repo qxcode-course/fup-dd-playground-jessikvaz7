@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_17-45-09",
+            "content": "@@ -98,9 +98,9 @@\n  := \n-2\n+0\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-25_17-45-25",
+            "content": "@@ -98,10 +98,9 @@\n  := \n-0 \n+2\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-25_17-45-48",
+            "content": "@@ -47,335 +47,33 @@\n %0A   \n-tam int%0A   pe string %0A%7D%0Afunc gerarpar(bota bota) bota %7B%0A    par := bota%7Btam: bota.tam%7D%0A    if bota.pe == %22D%22%0A    par.pe = %22E%22%0A%7D else %7B%0A    par.pe = %22D%22%0A%7D%0Areturn par%0A%7D%0Afunc procurarbota(lista %5B%5Dbota, bota bota ) (boll, int) %7B%0A    for i, elem := range lista %7B%0A    if elem == bota %0A    return true, i%0A    %7D%0A  %7D%0A  return false,0%0A%7D \n+ pe string%0A    tam int%0A%7D%0A\n %0Afun\n@@ -206,310 +206,28 @@\n am, \n-%5Bi%5D\n+&\n botas\n-.pe)%0A%7D%0A    descasados := make(%5B%5Dbota, 0)%0A    cont_pares := 0%0A    for_, elem := range botas %7B%0A    par := gerarpar(elem)%0A    encontrei, onde := procurarbota(descasados, par)%0A    if !encontrei %7B%0A    descasados = append(descasados, elem)%0A%7D else %7B%0Acont_pares += 1%0Adescasados%5Bonde%5D.tam = 0%0A    %7D%0A %7D%0A \n+%5Bi%5D.pe)    %0A%7D%0A\n fmt.\n@@ -238,17 +238,12 @@\n tln(\n-cont_pare\n+bota\n s)%0A%7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-26_18-37-52",
+            "content": "package main\n\nimport \"fmt\"\n\ntype bota struct {\n   tam int\n   pe string \n}\nfunc gerarpar(bota bota) bota {\n    par := bota{tam: bota.tam}\n    if bota.pe == \"D\"\n    par.pe = \"E\"\n} else {\n    par.pe = \"D\"\n}\nreturn par\n}\nfunc procurarbota(lista []bota, bota bota ) (boll, int) {\n    for i, elem := range lista {\n    if elem == bota \n    return true, i\n    }\n  }\n  return false,0\n} \nfunc main() {\n    qtd := 0 \n    fmt.Scan(&qtd)\n    botas := make([]bota, qtd)\n    for i := range botas {\n    fmt.Scan(&botas[i].tam, [i]botas.pe)\n}\n    descasados := make([]bota, 0)\n    cont_pares := 0\n    for_, elem := range botas {\n    par := gerarpar(elem)\n    encontrei, onde := procurarbota(descasados, par)\n    if !encontrei {\n    descasados = append(descasados, elem)\n} else {\ncont_pares += 1\ndescasados[onde].tam = 0\n    }\n }\n fmt.Println(cont_pares)\n}\n",
+            "lines": "46"
+        }
+    ]
+}

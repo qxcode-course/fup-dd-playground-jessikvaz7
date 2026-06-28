@@ -22,8 +22,18 @@
         },
         {
             "label": "2026-05-11_02-25-42",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"strconv\"\n)\n\nfunc filtrarimpares(nums []int) []int {\n\timpares := []int{}\n\n\tfor _, elem := range nums {\n\t\tif elem%2 == 1 {\n\t\t\timpares = append(impares, elem)\n\t\t}\n\t}\n\n\treturn impares\n}\n\nfunc index(nums []int, valor int) int {\n\tfor i, elem := range nums {\n\t\tif elem == valor {\n\t\t\treturn i\n\t\t}\n\t}\n\n\treturn -1\n}\n\nfunc contains(nums []int, valor int) bool {\n\tfor _, elem := range nums {\n\t\tif elem == valor {\n\t\t\treturn true\n\t\t}\n\t}\n\n\treturn false\n}\n\nfunc count(nums []int, valor int) int {\n\tcontador := 0\n\n\tfor _, elem := range nums {\n\t\tif elem == valor {\n\t\t\tcontador++\n\t\t}\n\t}\n\n\treturn contador\n}\n\nfunc separarfigurinhas(montante []int) ([]int, []int) {\n\talbum := []int{}\n\trepet := []int{}\n\n\tfor _, fig := range montante {\n\t\tif !contains(album, fig) {\n\t\t\talbum = append(album, fig)\n\t\t} else {\n\t\t\trepet = append(repet, fig)\n\t\t}\n\t}\n\n\treturn album, repet\n}\n\nfunc main() {\n\tnum, err := strconv.Atoi(\"3641\")\n\n\tif err == nil {\n\t\tfmt.Println(num)\n\t}\n}\n",
+            "content": "@@ -53,9 +53,9 @@\n trar\n-I\n+i\n mpar\n@@ -143,12 +143,12 @@\n m%252 \n-!= 0\n+== 1\n  %7B%0A%09\n@@ -630,9 +630,9 @@\n arar\n-F\n+f\n igur\n@@ -923,16 +923,17 @@\n 1%22)%0A\n+%0A\n %09if err \n != n\n@@ -928,17 +928,17 @@\n %09if err \n-!\n+=\n = nil %7B%0A\n@@ -955,51 +955,14 @@\n tln(\n-%22Erro:%22, err)%0A%09%09return%0A%09%7D%0A%0A%09fmt.Println(\n num)\n+%0A%09%7D\n %0A%7D%0A\n",
             "lines": "73"
+        },
+        {
+            "label": "2026-06-26_22-59-45",
+            "content": "@@ -18,208 +18,987 @@\n ort \n+(%0A%09\n %22fmt%22%0A\n-%0Afunc main() %7B%0A%09var tempo int%0A%0A%09fmt.Scan(&tempo)%0A%0A%09horas := tempo / 3600%0A%09resto := tempo %25 3600%0A%09minutos := resto / 60%0A%09segundos := resto %25 60%0A%0A%09fmt.Printf(%22%25d:%25d:%25d%5Cn%22, horas, minutos, segundos\n+%09%22strconv%22%0A)%0A%0Afunc filtrarImpares(nums %5B%5Dint) %5B%5Dint %7B%0A%09impares := %5B%5Dint%7B%7D%0A%0A%09for _, elem := range nums %7B%0A%09%09if elem%252 != 0 %7B%0A%09%09%09impares = append(impares, elem)%0A%09%09%7D%0A%09%7D%0A%0A%09return impares%0A%7D%0A%0Afunc index(nums %5B%5Dint, valor int) int %7B%0A%09for i, elem := range nums %7B%0A%09%09if elem == valor %7B%0A%09%09%09return i%0A%09%09%7D%0A%09%7D%0A%0A%09return -1%0A%7D%0A%0Afunc contains(nums %5B%5Dint, valor int) bool %7B%0A%09for _, elem := range nums %7B%0A%09%09if elem == valor %7B%0A%09%09%09return true%0A%09%09%7D%0A%09%7D%0A%0A%09return false%0A%7D%0A%0Afunc count(nums %5B%5Dint, valor int) int %7B%0A%09contador := 0%0A%0A%09for _, elem := range nums %7B%0A%09%09if elem == valor %7B%0A%09%09%09contador++%0A%09%09%7D%0A%09%7D%0A%0A%09return contador%0A%7D%0A%0Afunc separarFigurinhas(montante %5B%5Dint) (%5B%5Dint, %5B%5Dint) %7B%0A%09album := %5B%5Dint%7B%7D%0A%09repet := %5B%5Dint%7B%7D%0A%0A%09for _, fig := range montante %7B%0A%09%09if !contains(album, fig) %7B%0A%09%09%09album = append(album, fig)%0A%09%09%7D else %7B%0A%09%09%09repet = append(repet, fig)%0A%09%09%7D%0A%09%7D%0A%0A%09return album, repet%0A%7D%0A%0Afunc main() %7B%0A%09num, err := strconv.Atoi(%223641%22)%0A%09if err != nil %7B%0A%09%09fmt.Println(%22Erro:%22, err)%0A%09%09return%0A%09%7D%0A%0A%09fmt.Println(num\n )%0A%7D%0A\n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-06-26_23-01-52",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar tempo int\n\n\tfmt.Scan(&tempo)\n\n\thoras := tempo / 3600\n\tresto := tempo % 3600\n\tminutos := resto / 60\n\tsegundos := resto % 60\n\n\tfmt.Printf(\"%d:%d:%d\\n\", horas, minutos, segundos)\n}\n",
+            "lines": "16"
         }
     ]
 }

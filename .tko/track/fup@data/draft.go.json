@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-26_23-08-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var hora, minuto, dia, mes, ano int\n\n    fmt.Scan(&hora)\n    fmt.Scan(&minuto)\n    fmt.Scan(&dia)\n    fmt.Scan(&mes)\n    fmt.Scan(&ano)\n\n    fmt.Printf(\"%02d:%02d %02d/%02d/%02d\\n\", hora, minuto, dia, mes, ano%100)\n}\n",
+            "lines": "13"
+        }
+    ]
+}

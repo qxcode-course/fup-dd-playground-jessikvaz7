@@ -1,0 +1,73 @@
+2026-06-26 22:17:07, SELF, v:1, k:fup@segundos, self:1, concept:1, problem:1, code:1, debug:1, refactor:1
+2026-06-26 22:17:50, MOVE, v:1, k:fup@quebrada, mode:DOWN
+2026-06-26 22:17:52, MOVE, v:1, k:fup@quebrada, mode:PICK
+2026-06-26 22:17:50, MOVE, v:1, k:fup@quebrada, mode:EDIT
+2026-06-26 22:20:58, MOVE, v:1, k:fup@quebrada, mode:EDIT
+2026-06-26 22:25:57, MOVE, v:1, k:fup@quebrada, mode:EDIT
+2026-06-26 22:26:35, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0, size:10
+2026-06-26 22:27:33, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0, size:10
+2026-06-26 22:27:42, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0, size:10
+2026-06-26 22:27:58, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0, size:10
+2026-06-26 22:28:29, EXEC, v:1, k:fup@quebrada, mode:FULL, size:11, fail:COMP
+2026-06-26 22:28:42, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:100, size:11
+2026-06-26 22:29:13, MOVE, v:1, k:fup@quebrada, mode:BACK
+2026-06-26 22:29:44, SELF, v:1, k:fup@quebrada, self:1, rate:100, concept:1, refactor:1
+2026-06-26 22:30:16, SELF, v:1, k:fup@bala, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-26 22:30:36, SELF, v:1, k:fup@pintando, self:1, rate:100, friend:sena, concept:1, debug:1, refactor:1
+2026-06-26 22:30:59, SELF, v:1, k:fup@celsius, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-26 22:28:42, MOVE, v:1, k:fup@quebrada, mode:EDIT
+2026-06-26 22:28:42, MOVE, v:1, k:fup@quebrada, mode:EDIT
+2026-06-26 22:32:10, SELF, v:1, k:fup@sobrou, self:1, rate:100, concept:1, debug:1
+2026-06-26 22:32:10, MOVE, v:1, k:fup@sobrou, mode:PICK
+2026-06-26 22:32:13, MOVE, v:1, k:fup@sobrou, mode:BACK
+2026-06-26 22:32:39, MOVE, v:1, k:fup@operacoes, mode:DOWN
+2026-06-26 22:32:41, MOVE, v:1, k:fup@operacoes, mode:PICK
+2026-06-26 22:32:39, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-06-26 22:35:47, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-06-26 22:42:45, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:12
+2026-06-26 22:43:05, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:13
+2026-06-26 22:44:05, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:13
+2026-06-26 22:45:58, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-06-26 22:44:05, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-06-26 22:48:46, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:14
+2026-06-26 22:50:11, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:14
+2026-06-26 22:50:10, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-06-26 22:50:11, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-06-26 22:51:14, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:14
+2026-06-26 22:51:54, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:15
+2026-06-26 22:54:54, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:100, size:14
+2026-06-26 22:55:41, MOVE, v:1, k:fup@operacoes, mode:BACK
+2026-06-26 22:54:52, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-06-26 22:54:54, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-06-26 22:56:19, SELF, v:1, k:fup@operacoes, self:1, rate:100, debug:1, refactor:1
+2026-06-26 22:56:37, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-06-26 22:57:11, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-06-26 22:58:39, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-06-26 22:59:37, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-06-26 22:59:45, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:75
+2026-06-26 23:01:53, EXEC, v:1, k:fup@segundos, mode:FULL, rate:100, size:16
+2026-06-26 23:01:59, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-06-26 23:02:36, SELF, v:1, k:fup@segundos, self:1, rate:100, debug:1, refactor:1
+2026-06-26 23:02:58, SELF, v:1, k:fup@tres, self:1, rate:100, guided:1, concept:1, debug:1, refactor:1
+2026-06-26 23:03:07, MOVE, v:1, k:fup@data, mode:DOWN
+2026-06-26 23:03:12, MOVE, v:1, k:fup@data, mode:PICK
+2026-06-26 23:01:52, MOVE, v:1, k:fup@segundos, mode:EDIT
+2026-06-26 23:01:20, MOVE, v:1, k:fup@segundos, mode:EDIT
+2026-06-26 23:03:07, MOVE, v:1, k:fup@data, mode:EDIT
+2026-06-26 23:04:31, MOVE, v:1, k:fup@data, mode:EDIT
+2026-06-26 23:08:52, EXEC, v:1, k:fup@data, mode:FULL, rate:100, size:13
+2026-06-26 23:09:11, MOVE, v:1, k:fup@data, mode:BACK
+2026-06-26 23:08:45, MOVE, v:1, k:fup@data, mode:EDIT
+2026-06-26 23:08:52, MOVE, v:1, k:fup@data, mode:EDIT
+2026-06-26 23:09:36, SELF, v:1, k:fup@data, self:1, rate:100, concept:1, debug:1
+2026-06-26 23:10:10, MOVE, v:1, k:fup@opala, mode:DOWN
+2026-06-26 23:10:29, MOVE, v:1, k:fup@opala, mode:PICK
+2026-06-26 23:10:10, MOVE, v:1, k:fup@opala, mode:EDIT
+2026-06-26 23:14:22, MOVE, v:1, k:fup@opala, mode:EDIT
+2026-06-26 23:16:58, EXEC, v:1, k:fup@opala, mode:FULL, size:14, fail:COMP
+2026-06-26 23:19:31, MOVE, v:1, k:fup@opala, mode:EDIT
+2026-06-26 23:19:37, EXEC, v:1, k:fup@opala, mode:FULL, rate:100, size:18
+2026-06-26 23:19:42, MOVE, v:1, k:fup@opala, mode:BACK
+2026-06-26 23:20:00, SELF, v:1, k:fup@opala, self:1, rate:100, debug:1, refactor:1
+2026-06-26 23:19:36, MOVE, v:1, k:fup@opala, mode:EDIT
+2026-06-26 23:19:37, MOVE, v:1, k:fup@opala, mode:EDIT

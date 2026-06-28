@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-26_23-16-58",
+            "content": "@@ -1,9 +1,8 @@\n-%0A\n package \n@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var velo\n@@ -58,16 +58,19 @@\n e, tempo\n+Min\n , consum\n@@ -83,34 +83,12 @@\n t64%0A\n-%09var desempenho float64%0A%0A%09\n+    \n fmt.\n@@ -105,17 +105,20 @@\n cidade)%0A\n-%09\n+    \n fmt.Scan\n@@ -122,17 +122,22 @@\n can(\n-&\n tempo\n-)%0A%09\n+Min)%0A    \n fmt.\n@@ -155,44 +155,64 @@\n mo)%0A\n-%0A%09tempo \n+    %0A    tempohoras :\n = tempo\n+Min\n  / 60\n-%0A%09desempenho \n+.0%0A    distancia :\n = \n-(\n velo\n@@ -225,17 +225,49 @@\n  * tempo\n-)\n+horas%0A    desempenho := distancia\n  / consu\n@@ -274,9 +274,12 @@\n mo%0A%0A\n-%09\n+    \n fmt.\n@@ -292,17 +292,16 @@\n (%22%25.2f%5Cn\n-%22\n , desemp\n@@ -304,12 +304,13 @@\n sempenho\n+%22\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-26_23-19-37",
+            "content": "\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar velocidade, tempo, consumo float64\n\tvar desempenho float64\n\n\tfmt.Scan(&velocidade)\n\tfmt.Scan(&tempo)\n\tfmt.Scan(&consumo)\n\n\ttempo = tempo / 60\n\tdesempenho = (velocidade * tempo) / consumo\n\n\tfmt.Printf(\"%.2f\\n\", desempenho)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

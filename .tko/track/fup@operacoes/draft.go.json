@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-26_22-42-45",
+            "content": "@@ -46,20 +46,9 @@\n ar a\n- int%0A    var\n+,\n  b i\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-26_22-43-05",
+            "content": "@@ -207,25 +207,13 @@\n tln(\n- float64 (\n a %25 b)\n- )\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-26_22-44-05",
+            "content": "@@ -207,47 +207,16 @@\n tln(\n-a %25 b)%0A    fmt.Printf(%22%25.2f%5Cn%22,\n  float64\n (a),\n@@ -215,23 +215,17 @@\n at64\n+ \n (a\n-), float64(\n+ %25 \n b)\n+ \n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-26_22-48-46",
+            "content": "@@ -245,18 +245,17 @@\n oat64(a)\n- /\n+,\n  float64\n@@ -257,13 +257,12 @@\n oat64(b)\n- \n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-26_22-50-11",
+            "content": "@@ -183,24 +183,47 @@\n ntln(a / b)%0A\n+    fmt.Println(a %25 b)%0A\n     fmt.Prin\n@@ -261,33 +261,10 @@\n 64(b) )%0A\n-    fmt.Println(a %25 b)%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-26_22-51-14",
+            "content": "@@ -46,11 +46,8 @@\n ar a\n-, b\n  int\n@@ -51,16 +51,25 @@\n int%0A    \n+var b int\n %0A    fmt\n@@ -95,17 +95,16 @@\n can(&b)%0A\n-%0A\n     fmt.\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-26_22-51-54",
+            "content": "@@ -50,16 +50,20 @@\n , b int%0A\n+    \n %0A    fmt\n@@ -155,24 +155,47 @@\n ntln(a * b)%0A\n+    fmt.Println(a / b)%0A\n     fmt.Prin\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-26_22-54-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n\n    fmt.Println(a + b)\n    fmt.Println(a - b)\n    fmt.Println(a * b)\n    fmt.Printf(\"%.2f\\n\", float64(a) / float64(b) )\n    fmt.Println(a % b)\n}\n",
+            "lines": "14"
+        }
+    ]
+}
