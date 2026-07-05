@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_04-02-25",
+            "content": "@@ -397,10 +397,8 @@\n  hal\n-%22)\n %0A%09%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-05_04-02-32",
+            "content": "@@ -396,17 +396,8 @@\n o ha\n- raiz rea\n l%22)%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-05_04-03-04",
+            "content": "@@ -241,91 +241,8 @@\n a)%0A%0A\n-%09%09if math.Abs(x1) %3C 1e-9 %7B%0A%09%09%09x1 = 0%0A%09%09%7D%0A%09%09if math.Abs(x2) %3C 1e-9 %7B%0A%09%09%09x2 = 0%0A%09%09%7D%0A%0A\n %09%09fm\n@@ -264,16 +264,16 @@\n n%22, x1)%0A\n+\n %09%09fmt.Pr\n@@ -291,17 +291,16 @@\n n%22, x2)%0A\n-%0A\n %09%7D else \n@@ -339,49 +339,8 @@\n  a)%0A\n-%0A%09%09if math.Abs(x) %3C 1e-9 %7B%0A%09%09%09x = 0%0A%09%09%7D%0A%0A\n %09%09fm\n@@ -361,17 +361,16 @@\n %5Cn%22, x)%0A\n-%0A\n %09%7D else \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-05_04-05-56",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar a, b, c float64\n\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\n\tdelta := b*b - 4*a*c\n\n\tif delta > 0 {\n\t\tx1 := (-b + math.Sqrt(delta)) / (2 * a)\n\t\tx2 := (-b - math.Sqrt(delta)) / (2 * a)\n\n\t\tif math.Abs(x1) < 1e-9 {\n\t\t\tx1 = 0\n\t\t}\n\t\tif math.Abs(x2) < 1e-9 {\n\t\t\tx2 = 0\n\t\t}\n\n\t\tfmt.Printf(\"%.2f\\n\", x1)\n\t\tfmt.Printf(\"%.2f\\n\", x2)\n\n\t} else if delta == 0 {\n\t\tx := -b / (2 * a)\n\n\t\tif math.Abs(x) < 1e-9 {\n\t\t\tx = 0\n\t\t}\n\n\t\tfmt.Printf(\"%.2f\\n\", x)\n\n\t} else {\n\t\tfmt.Println(\"nao ha raiz real\")\n\t}\n}\n",
+            "lines": "43"
+        }
+    ]
+}

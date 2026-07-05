@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_04-17-36",
+            "content": "@@ -108,17 +108,17 @@\n  * 70 / \n-0\n+1\n %0A%0A%09if ar\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-05_04-17-56",
+            "content": "@@ -108,17 +108,17 @@\n  * 70 / \n-2\n+0\n %0A%0A%09if ar\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-05_04-19-42",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar B, T int\n\n\tfmt.Scan(&B)\n\tfmt.Scan(&T)\n\n\tarea := float64(B+T) * 70 / 2\n\n\tif area > 5600 {\n\t\tfmt.Println(1)\n\t} else if area < 5600 {\n\t\tfmt.Println(2)\n\t} else {\n\t\tfmt.Println(0)\n\t}\n}\n",
+            "lines": "20"
+        }
+    ]
+}

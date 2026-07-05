@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_19-30-58",
+            "content": "@@ -141,73 +141,183 @@\n %09%7D%0A%0A\n+%09gritos := make(%5B%5Dint, x)%0A\n %09for \n-k\n+i\n  := 0; \n-k\n+i\n  %3C x; \n-k\n+i\n ++ %7B%0A%09%09\n-var g int%0A%09%09fmt.Scan(&g)%0A%0A%09%09pos := -1\n+fmt.Scan(&gritos%5Bi%5D)%0A%09%7D%0A%0A%09for _, g := range gritos %7B%0A%09%09pos := -1%0A%0A%09%09// Procura o oper%C3%A1rio (considerando o valor absoluto)\n %0A%09%09f\n@@ -440,16 +440,54 @@\n %09%7D%0A%09%09%7D%0A%0A\n+%09%09// Se encontrou, altera os vizinhos%0A\n %09%09if pos\n@@ -601,24 +601,8 @@\n %09%7D%0A%0A\n-%09fmt.Print(%22%5B%22)%0A\n %09for\n@@ -650,17 +650,16 @@\n .Print(%22\n-,\n  %22)%0A%09%09%7D%0A\n@@ -696,11 +696,8 @@\n tln(\n-%22%5D%22\n )%0A%7D%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-07-05_19-32-46",
+            "content": "@@ -518,16 +518,17 @@\n .Print(%22\n+,\n  %22)%0A%09%09%7D%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-07-05_19-33-48",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, x int\n\tfmt.Scan(&n, &x)\n\n\tv := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&v[i])\n\t}\n\n\tfor k := 0; k < x; k++ {\n\t\tvar g int\n\t\tfmt.Scan(&g)\n\n\t\tpos := -1\n\t\tfor i := 0; i < n; i++ {\n\t\t\tval := v[i]\n\t\t\tif val < 0 {\n\t\t\t\tval = -val\n\t\t\t}\n\t\t\tif val == g {\n\t\t\t\tpos = i\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\n\t\tif pos != -1 {\n\t\t\tif pos > 0 {\n\t\t\t\tv[pos-1] = -v[pos-1]\n\t\t\t}\n\t\t\tif pos < n-1 {\n\t\t\t\tv[pos+1] = -v[pos+1]\n\t\t\t}\n\t\t}\n\t}\n\n\tfmt.Print(\"[\")\n\tfor i := 0; i < n; i++ {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t\tfmt.Print(v[i])\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "48"
+        }
+    ]
+}

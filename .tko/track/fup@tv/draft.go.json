@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_00-33-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var valor float64\n    var parcelas int\n    \n    fmt.Scan(&valor)\n    fmt.Scan(&parcelas)\n\n    juros := (parcelas - 1) * 5\n\n    total := valor + valor*float64(juros)/100\n    valorParcela := total / float64(parcelas)\n\n    fmt.Printf(\"%.2f\\n\", valorParcela)\n    fmt.Printf(\"%.2f\\n\", total)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

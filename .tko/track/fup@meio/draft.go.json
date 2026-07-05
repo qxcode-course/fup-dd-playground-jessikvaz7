@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_20-25-30",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var a, b, c int\n    \n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n    \n    if (a > b && a < c) || (a > c && a < b) {\n        fmt.Println(a)\n    } else if (b > a && b < c) || (b > c && b < a) {\n        fmt.Println(b)\n    } else {\n        fmt.Println(c)\n    }     \n}\n",
+            "lines": "19"
+        }
+    ]
+}

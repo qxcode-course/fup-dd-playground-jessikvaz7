@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_20-35-47",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar nota1, nota2, notaFinal int\n\tvar media float64\n\n\tfmt.Scan(&nota1)\n\tfmt.Scan(&nota2)\n\tfmt.Scan(&notaFinal)\n\n\tmedia = float64(nota1+nota2) / 2\n\n\tif media >= 7 {\n\t\tfmt.Println(\"aprovado\")\n\t} else if media < 4 {\n\t\tfmt.Println(\"reprovado\")\n\t} else {\n\t\tmedia = (media + float64(notaFinal)) / 2\n\n\t\tif media >= 5 {\n\t\t\tfmt.Println(\"aprovado na final\")\n\t\t} else {\n\t\t\tfmt.Println(\"reprovado na final\")\n\t\t}\n\t}\n}\n",
+            "lines": "28"
+        }
+    ]
+}

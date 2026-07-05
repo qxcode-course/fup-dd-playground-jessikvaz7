@@ -1,0 +1,19 @@
+2026-06-28 00:27:24, MOVE, v:1, k:fup@tv, mode:DOWN
+2026-06-28 00:27:30, MOVE, v:1, k:fup@tv, mode:PICK
+2026-06-28 00:27:24, MOVE, v:1, k:fup@tv, mode:EDIT
+2026-06-28 00:32:07, MOVE, v:1, k:fup@tv, mode:EDIT
+2026-06-28 00:33:48, EXEC, v:1, k:fup@tv, mode:FULL, rate:100, size:18
+2026-06-28 00:34:04, MOVE, v:1, k:fup@tv, mode:BACK
+2026-06-28 00:34:28, SELF, v:1, k:fup@tv, self:1, rate:100, concept:1, debug:1
+2026-06-28 00:35:10, SELF, v:1, k:fup@abs, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-28 00:35:31, SELF, v:1, k:fup@max, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-28 00:35:50, SELF, v:1, k:fup@ou, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-28 00:36:03, SELF, v:1, k:fup@positivo, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-28 00:36:15, SELF, v:1, k:fup@multiplo, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-28 00:36:31, SELF, v:1, k:fup@calc, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-28 00:36:40, SELF, v:1, k:fup@guarda, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-28 00:36:51, SELF, v:1, k:fup@quantos, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-28 00:36:59, SELF, v:1, k:fup@impar, self:1, rate:100, concept:1, debug:1, refactor:1
+2026-06-28 00:33:44, MOVE, v:1, k:fup@tv, mode:EDIT
+2026-06-28 00:33:48, MOVE, v:1, k:fup@tv, mode:EDIT
+2026-06-28 00:37:13, SELF, v:1, k:fup@mumia, self:1, rate:100, concept:1, debug:1, refactor:1

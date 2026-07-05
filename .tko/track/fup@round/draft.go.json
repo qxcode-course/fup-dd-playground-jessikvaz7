@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_20-17-47",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n    var op string\n    var num float64\n\n    fmt.Scan(&op)\n    fmt.Scan(&num)\n\n    switch op {\n    case \"c\":\n        fmt.Println(int(math.Ceil(num))) \n    case \"f\":\n        fmt.Println(int(math.Floor(num)))\n    case \"r\":\n        fmt.Println(int(math.Round(num)))\n    }            \n}\n",
+            "lines": "21"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_20-10-29",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvacinas := make([]int, n)\n\tpacientes := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vacinas[i])\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&pacientes[i])\n\t}\n\n\tsort.Ints(vacinas)\n\tsort.Ints(pacientes)\n\n\tfor i := 0; i < n; i++ {\n\t\tif vacinas[i] <= pacientes[i] {\n\t\t\tfmt.Println(\"No\")\n\t\t\treturn\n\t\t}\n\t}\n\n\tfmt.Println(\"Yes\")\n}\n",
+            "lines": "34"
+        }
+    ]
+}

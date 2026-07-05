@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_20-19-20",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc bubbleSort(v []int) {\n\tn := len(v)\n\n\tfor i := 0; i < n-1; i++ {\n\t\tfor j := 0; j < n-1-i; j++ {\n\t\t\tif v[j] > v[j+1] {\n\t\t\t\tv[j], v[j+1] = v[j+1], v[j]\n\t\t\t}\n\t\t}\n\t}\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tv := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&v[i])\n\t}\n\n\tbubbleSort(v)\n\n\tfor i := 0; i < n; i++ {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t\tfmt.Print(v[i])\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "36"
+        }
+    ]
+}

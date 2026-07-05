@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_03-55-41",
+            "content": "@@ -159,17 +159,8 @@\n ) %7B%0A\n-        %0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-07-05_03-56-10",
+            "content": "@@ -155,16 +155,24 @@\n  %3E a) %7B%0A\n+        \n %0A       \n@@ -189,9 +189,9 @@\n ln(%22\n-T\n+t\n rue%22\n@@ -230,9 +230,9 @@\n ln(%22\n-F\n+f\n alse\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-07-05_03-56-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    \n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n\n    if (a+b > c) && (a+c > b) && (b+c > a) {\n\n        fmt.Println(\"True\")\n    } else {\n        fmt.Println(\"False\")\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

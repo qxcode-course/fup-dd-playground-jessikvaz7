@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_20-33-28",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var jog1, jog2 string\n\n    fmt.Scan(&jog1)\n    fmt.Scan(&jog2)\n\n    if jog1 == jog2 {\n        fmt.Println(\"empate\")\n    } else if (jog1 == \"R\" && jog2 == \"S\") ||\n     (jog1 == \"S\" && jog2 == \"P\") ||\n     (jog1 == \"P\" && jog2 == \"R\") {\n        fmt.Println(\"jog1\")\n     } else {\n        fmt.Println(\"jog2\")\n     }     \n}\n",
+            "lines": "20"
+        }
+    ]
+}

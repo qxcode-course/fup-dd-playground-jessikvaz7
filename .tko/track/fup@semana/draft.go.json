@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_20-45-02",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,16 +37,20 @@\n ) %7B%0A\n-%09\n+    \n var dia\n+ \n , ho\n@@ -55,19 +55,23 @@\n hora int\n-%0A%0A%09\n+ %0A     \n fmt.Scan\n@@ -77,17 +77,21 @@\n n(&dia)%0A\n-%09\n+     \n fmt.Scan\n@@ -99,17 +99,21 @@\n &hora)%0A%0A\n-%09\n+     \n if dia %3E\n@@ -174,17 +174,16 @@\n & hora %3C\n-=\n  11) %7C%7C \n@@ -326,17 +326,16 @@\n & hora %3C\n-=\n  11 %7B%0A%09%09\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-01_20-48-42",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar dia, hora int\n\n\tfmt.Scan(&dia)\n\tfmt.Scan(&hora)\n\n\tif dia >= 2 && dia <= 6 { // Segunda a sexta\n\t\tif (hora >= 8 && hora <= 11) || (hora >= 14 && hora <= 17) {\n\t\t\tfmt.Println(\"SIM\")\n\t\t} else {\n\t\t\tfmt.Println(\"NAO\")\n\t\t}\n\t} else if dia == 7 { // S\u00e1bado\n\t\tif hora >= 8 && hora <= 11 {\n\t\t\tfmt.Println(\"SIM\")\n\t\t} else {\n\t\t\tfmt.Println(\"NAO\")\n\t\t}\n\t} else { // Domingo\n\t\tfmt.Println(\"NAO\")\n\t}\n}\n",
+            "lines": "26"
+        }
+    ]
+}

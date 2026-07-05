@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_19-50-49",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\n\ntype Item struct {\n\tvalor  int\n\tindice int\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tv := make([]Item, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&v[i].valor)\n\t\tv[i].indice = i\n\t}\n\n\tsort.Slice(v, func(i, j int) bool {\n\t\treturn v[i].valor < v[j].valor\n\t})\n\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Print(v[i].indice)\n\t\tif i != n-1 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "36"
+        }
+    ]
+}

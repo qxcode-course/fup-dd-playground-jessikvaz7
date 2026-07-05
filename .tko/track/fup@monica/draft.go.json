@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_04-29-15",
+            "content": "@@ -184,17 +184,17 @@\n maior = \n-A\n+B\n %0A%09%7D%0A%0A%09fm\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-05_04-33-00",
+            "content": "@@ -184,17 +184,17 @@\n maior = \n-C\n+A\n %0A%09%7D%0A%0A%09fm\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-05_04-33-07",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar M, A, B int\n\n\tfmt.Scan(&M)\n\tfmt.Scan(&A)\n\tfmt.Scan(&B)\n\n\tC := M - A - B\n\n\tmaior := A\n\n\tif B > maior {\n\t\tmaior = B\n\t}\n\n\tif C > maior {\n\t\tmaior = C\n\t}\n\n\tfmt.Println(maior)\n}\n",
+            "lines": "25"
+        }
+    ]
+}

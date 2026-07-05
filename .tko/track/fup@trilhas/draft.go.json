@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_19-38-05",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc esforco(v []int) int {\n\tsoma := 0\n\tfor i := 1; i < len(v); i++ {\n\t\tif v[i] > v[i-1] {\n\t\t\tsoma += v[i] - v[i-1]\n\t\t}\n\t}\n\treturn soma\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tmelhorTrilha := 1\n\tmenorEsforco := -1\n\n\tfor t := 1; t <= n; t++ {\n\t\tvar m int\n\t\tfmt.Scan(&m)\n\n\t\th := make([]int, m)\n\t\tfor i := 0; i < m; i++ {\n\t\t\tfmt.Scan(&h[i])\n\t\t}\n\n\t\tida := esforco(h)\n\n\t\tinv := make([]int, m)\n\t\tfor i := 0; i < m; i++ {\n\t\t\tinv[i] = h[m-1-i]\n\t\t}\n\n\t\tvolta := esforco(inv)\n\n\t\te := ida\n\t\tif volta < e {\n\t\t\te = volta\n\t\t}\n\n\t\tif menorEsforco == -1 || e < menorEsforco {\n\t\t\tmenorEsforco = e\n\t\t\tmelhorTrilha = t\n\t\t}\n\t}\n\n\tfmt.Println(melhorTrilha)\n}\n",
+            "lines": "52"
+        }
+    ]
+}

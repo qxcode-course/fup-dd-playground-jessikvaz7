@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_19-15-44",
+            "content": "@@ -49,16 +49,17 @@\n , Q int%0A\n+%0A\n %09fmt.Sca\n@@ -214,16 +214,32 @@\n %09%09%7D%0A%09%7D%0A%0A\n+%09fmt.Print(%22%5B%22)%0A\n %09for i :\n@@ -283,16 +283,17 @@\n .Print(%22\n+,\n  %22)%0A%09%09%7D%0A\n@@ -329,12 +329,15 @@\n Println(\n+%22%5D%22\n )%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-05_19-16-40",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N, Q int\n\tfmt.Scan(&N, &Q)\n\n\tagua := make([]int, N)\n\n\tfor i := 0; i < Q; i++ {\n\t\tvar A, B, L int\n\t\tfmt.Scan(&A, &B, &L)\n\n\t\tfor j := A; j <= B; j++ {\n\t\t\tagua[j] += L\n\t\t}\n\t}\n\n\tfor i := 0; i < N; i++ {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t\tfmt.Print(agua[i])\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "27"
+        }
+    ]
+}

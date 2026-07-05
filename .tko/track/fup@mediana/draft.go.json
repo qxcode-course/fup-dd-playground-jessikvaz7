@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_20-00-06",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tv := make([]float64, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&v[i])\n\t}\n\n\tsort.Float64s(v)\n\n\tvar mediana float64\n\n\tif n%2 == 1 {\n\t\tmediana = v[n/2]\n\t} else {\n\t\tmediana = (v[n/2-1] + v[n/2]) / 2\n\t}\n\n\tfmt.Printf(\"%.1f\\n\", mediana)\n}\n",
+            "lines": "29"
+        }
+    ]
+}
