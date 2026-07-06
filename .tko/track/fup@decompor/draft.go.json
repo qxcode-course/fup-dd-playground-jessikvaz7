@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_21-25-19",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvar v []int\n\n\tif n == 0 {\n\t\tfmt.Println(0)\n\t\treturn\n\t}\n\n\tfor n > 0 {\n\t\tv = append(v, n%10)\n\t\tn /= 10\n\t}\n\n\tfor i := len(v) - 1; i >= 0; i-- {\n\t\tfmt.Print(v[i])\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "28"
+        }
+    ]
+}

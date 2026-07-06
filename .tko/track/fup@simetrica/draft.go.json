@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_20-24-28",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar mat [3][3]int\n\n\tfor i := 0; i < 3; i++ {\n\t\tfor j := 0; j < 3; j++ {\n\t\t\tfmt.Scan(&mat[i][j])\n\t\t}\n\t}\n\n\tfor i := 0; i < 3; i++ {\n\t\tfor j := i + 1; j < 3; j++ {\n\t\t\tif mat[i][j] != mat[j][i] {\n\t\t\t\tfmt.Println(\"nao\")\n\t\t\t\treturn\n\t\t\t}\n\t\t}\n\t}\n\n\tfmt.Println(\"sim\")\n}\n",
+            "lines": "24"
+        }
+    ]
+}

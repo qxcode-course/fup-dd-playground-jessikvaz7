@@ -1,0 +1,2 @@
+{"ts":1783308185,"hash":"69217a3079908094e11121d042354a7c1f55b6482ca1a51e1b250dfd1ed0eef9","mode":"full","content":"H4sIAKcfS2oC/wMAAAAAAAAAAAA="}
+{"ts":1783308215,"hash":"a3610ffe669af5c8fc20edd21d3c6d11ae05095006c0e36f4e1ba9d4ed149d93","mode":"diff","ops":[{"tag":"insert","a1":0,"a2":0,"text":"package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tsoma := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tvar x int\n\t\tfmt.Scan(&x)\n\t\tsoma += x\n\t}\n\n\tmedia := float64(soma) / float64(n)\n\n\tfmt.Printf(\"%.1f\\n\", media)\n}\n"}]}

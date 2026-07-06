@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_07-54-18",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,758 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%09fmt.Scan(&n)%0A%0A%09mat := make(%5B%5D%5B%5Dstring, n)%0A%0A%09leaoL, leaoC := -1, -1%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09mat%5Bi%5D = make(%5B%5Dstring, n)%0A%09%09for j := 0; j %3C n; j++ %7B%0A%09%09%09fmt.Scan(&mat%5Bi%5D%5Bj%5D)%0A%09%09%09if mat%5Bi%5D%5Bj%5D == %22L%22 %7B%0A%09%09%09%09leaoL = i%0A%09%09%09%09leaoC = j%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09gladiadores := 0%0A%09condenados := 0%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09for j := 0; j %3C n; j++ %7B%0A%0A%09%09%09if leaoL != -1 && (i == leaoL %7C%7C j == leaoC) %7B%0A%09%09%09%09continue%0A%09%09%09%7D%0A%0A%09%09%09if mat%5Bi%5D%5Bj%5D == %22G%22 %7B%0A%09%09%09%09gladiadores += 2%0A%09%09%09%7D else if mat%5Bi%5D%5Bj%5D == %22C%22 %7B%0A%09%09%09%09if i+j == n-1 %7B%0A%09%09%09%09%09condenados += 2%0A%09%09%09%09%7D else %7B%0A%09%09%09%09%09condenados++%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09if gladiadores %3E condenados %7B%0A%09%09fmt.Println(%22Gladiadores%22)%0A%09%7D else if condenados %3E gladiadores %7B%0A%09%09fmt.Println(%22Condenados a morte%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22Ninguem%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_08-00-16",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tmat := make([][]string, n)\n\n\tleaoL, leaoC := -1, -1\n\n\tfor i := 0; i < n; i++ {\n\t\tmat[i] = make([]string, n)\n\t\tfor j := 0; j < n; j++ {\n\t\t\tfmt.Scan(&mat[i][j])\n\t\t\tif mat[i][j] == \"L\" {\n\t\t\t\tleaoL = i\n\t\t\t\tleaoC = j\n\t\t\t}\n\t\t}\n\t}\n\n\tgladiadores := 0\n\tcondenados := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tfor j := 0; j < n; j++ {\n\n\t\t\tif leaoL != -1 && (i == leaoL || j == leaoC) {\n\t\t\t\tcontinue\n\t\t\t}\n\n\t\t\tif mat[i][j] == \"G\" {\n\t\t\t\tgladiadores += 2\n\t\t\t} else if mat[i][j] == \"C\" {\n\t\t\t\tif i+j == n-1 {\n\t\t\t\t\tcondenados += 2\n\t\t\t\t} else {\n\t\t\t\t\tcondenados++\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\tif gladiadores > condenados {\n\t\tfmt.Println(\"Gladiadores\")\n\t} else if condenados > gladiadores {\n\t\tfmt.Println(\"Condenados a morte\")\n\t} else {\n\t\tfmt.Println(\"Ninguem\")\n\t}\n}\n",
+            "lines": "53"
+        }
+    ]
+}

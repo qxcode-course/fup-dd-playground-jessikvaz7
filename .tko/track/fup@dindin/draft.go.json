@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_04-20-34",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tchocolate := 0\n\tlimao := 0\n\tmanha := 0\n\ttarde := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tvar sabor, turno string\n\t\tfmt.Scan(&sabor, &turno)\n\n\t\tif sabor == \"c\" {\n\t\t\tchocolate++\n\t\t} else if sabor == \"l\" {\n\t\t\tlimao++\n\t\t}\n\n\t\tif turno == \"m\" {\n\t\t\tmanha++\n\t\t} else if turno == \"t\" {\n\t\t\ttarde++\n\t\t}\n\t}\n\n\tif chocolate > limao {\n\t\tfmt.Println(\"c\")\n\t} else if limao > chocolate {\n\t\tfmt.Println(\"l\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n\n\tif manha < tarde {\n\t\tfmt.Println(\"m\")\n\t} else if tarde < manha {\n\t\tfmt.Println(\"t\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "46"
+        }
+    ]
+}

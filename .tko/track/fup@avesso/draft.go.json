@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_20-54-24",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar t int\n\tfmt.Scan(&t)\n\n\tfor ; t > 0; t-- {\n\t\tvar n, x int\n\t\tfmt.Scan(&n, &x)\n\n\t\tv := make([]int, n)\n\t\tfor i := 0; i < n; i++ {\n\t\t\tfmt.Scan(&v[i])\n\t\t}\n\n\t\tpos := -1\n\t\tfor i := 0; i < n; i++ {\n\t\t\tval := v[i]\n\t\t\tif val < 0 {\n\t\t\t\tval = -val\n\t\t\t}\n\t\t\tif val == x {\n\t\t\t\tpos = i\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\n\t\tif pos != -1 {\n\t\t\tif pos > 0 {\n\t\t\t\tv[pos-1] = -v[pos-1]\n\t\t\t}\n\t\t\tif pos < n-1 {\n\t\t\t\tv[pos+1] = -v[pos+1]\n\t\t\t}\n\t\t}\n\n\t\tfmt.Print(\"[\")\n\t\tfor i := 0; i < n; i++ {\n\t\t\tif i > 0 {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t\tfmt.Print(v[i])\n\t\t}\n\t\tfmt.Println(\"]\")\n\t}\n}\n",
+            "lines": "48"
+        }
+    ]
+}

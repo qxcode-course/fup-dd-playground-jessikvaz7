@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_21-53-16",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar v []int\n\n\tfor {\n\t\tvar x int\n\t\tn, err := fmt.Scan(&x)\n\t\tif n == 0 || err != nil {\n\t\t\tbreak\n\t\t}\n\t\tv = append(v, x)\n\t}\n\n\tfmt.Print(\"[ \")\n\tfor i := len(v) - 1; i >= 0; i-- {\n\t\tfmt.Print(v[i])\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "25"
+        }
+    ]
+}

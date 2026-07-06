@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_20-33-45",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar l, c int\n\tfmt.Scan(&l)\n\tfmt.Scan(&c)\n\n\tA := make([][]int, l)\n\tB := make([][]int, l)\n\n\tfor i := 0; i < l; i++ {\n\t\tA[i] = make([]int, c)\n\t\tfor j := 0; j < c; j++ {\n\t\t\tfmt.Scan(&A[i][j])\n\t\t}\n\t}\n\n\tfor i := 0; i < l; i++ {\n\t\tB[i] = make([]int, c)\n\t\tfor j := 0; j < c; j++ {\n\t\t\tfmt.Scan(&B[i][j])\n\t\t}\n\t}\n\n\tfor i := 0; i < l; i++ {\n\t\tfmt.Print(\"[ \")\n\t\tfor j := 0; j < c; j++ {\n\t\t\tfmt.Print(A[i][j] + B[i][j])\n\t\t\tif j < c-1 {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t}\n\t\tfmt.Println(\" ]\")\n\t}\n}\n",
+            "lines": "37"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_07-21-16",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"unicode\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\n\tfor _, c := range texto {\n\t\tif unicode.IsLower(c) {\n\t\t\tfmt.Printf(\"%c\", unicode.ToUpper(c))\n\t\t} else if unicode.IsUpper(c) {\n\t\t\tfmt.Printf(\"%c\", unicode.ToLower(c))\n\t\t} else {\n\t\t\tfmt.Printf(\"%c\", c)\n\t\t}\n\t}\n}\n",
+            "lines": "24"
+        }
+    ]
+}

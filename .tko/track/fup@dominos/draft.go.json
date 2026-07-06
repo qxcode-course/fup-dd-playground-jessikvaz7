@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_21-10-15",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tv := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&v[i])\n\t}\n\n\tordenado := true\n\n\tfor i := 1; i < n; i++ {\n\t\tif v[i] < v[i-1] {\n\t\t\tordenado = false\n\t\t\tbreak\n\t\t}\n\t}\n\n\tif ordenado {\n\t\tfmt.Println(\"ok\")\n\t} else {\n\t\tfmt.Println(\"precisa de ajuste\")\n\t}\n}\n",
+            "lines": "29"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_03-18-06",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar v [5]int\n\n\tfor i := 0; i < 5; i++ {\n\t\tfmt.Scan(&v[i])\n\t}\n\n\tmenor := v[0]\n\tmaior := v[0]\n\n\tfor i := 1; i < 5; i++ {\n\t\tif v[i] < menor {\n\t\t\tmenor = v[i]\n\t\t}\n\t\tif v[i] > maior {\n\t\t\tmaior = v[i]\n\t\t}\n\t}\n\n\tfmt.Println(maior + menor)\n}\n",
+            "lines": "25"
+        }
+    ]
+}

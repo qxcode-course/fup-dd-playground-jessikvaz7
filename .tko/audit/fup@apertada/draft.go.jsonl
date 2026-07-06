@@ -1,0 +1,2 @@
+{"ts":1783308117,"hash":"69217a3079908094e11121d042354a7c1f55b6482ca1a51e1b250dfd1ed0eef9","mode":"full","content":"H4sIAFcfS2oC/wMAAAAAAAAAAAA="}
+{"ts":1783308149,"hash":"f4359e7100edbca5f8a9704747c3f50a28856eb68a690cafc4de68e0e063cad5","mode":"diff","ops":[{"tag":"insert","a1":0,"a2":0,"text":"package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar x, menor int\n\n\tfmt.Scan(&menor)\n\n\tfor i := 1; i < 5; i++ {\n\t\tfmt.Scan(&x)\n\t\tif x < menor {\n\t\t\tmenor = x\n\t\t}\n\t}\n\n\tfmt.Println(menor)\n}\n"}]}

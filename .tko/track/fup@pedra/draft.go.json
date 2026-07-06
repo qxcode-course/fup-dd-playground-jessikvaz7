@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-58-22",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc abs(x int) int {\n\tif x < 0 {\n\t\treturn -x\n\t}\n\treturn x\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvencedor := -1\n\tmenor := 101\n\n\tfor i := 0; i < n; i++ {\n\t\tvar a, b int\n\t\tfmt.Scan(&a, &b)\n\n\t\tif a >= 10 && b >= 10 {\n\t\t\tdif := abs(a - b)\n\n\t\t\tif vencedor == -1 || dif < menor {\n\t\t\t\tmenor = dif\n\t\t\t\tvencedor = i\n\t\t\t}\n\t\t}\n\t}\n\n\tif vencedor == -1 {\n\t\tfmt.Println(\"sem ganhador\")\n\t} else {\n\t\tfmt.Println(vencedor)\n\t}\n}\n",
+            "lines": "38"
+        }
+    ]
+}

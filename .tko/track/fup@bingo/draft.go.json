@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_07-53-32",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tbingo := [4][4]int{\n\t\t{1, 9, 27, 23},\n\t\t{34, 20, 37, 47},\n\t\t{30, 87, 55, 69},\n\t\t{13, 60, 99, 66},\n\t}\n\n\tacertos := 0\n\n\tfor i := 0; i < 6; i++ {\n\t\tvar x int\n\t\tfmt.Scan(&x)\n\n\t\tfor l := 0; l < 4; l++ {\n\t\t\tfor c := 0; c < 4; c++ {\n\t\t\t\tif bingo[l][c] == x {\n\t\t\t\t\tacertos++\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\tfmt.Println(acertos)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

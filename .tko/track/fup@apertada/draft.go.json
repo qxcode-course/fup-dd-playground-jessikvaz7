@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-05-18_17-22-41",
-            "content": "package main\nimport \"fmt\"\nfunc menorindice (arr ) {\n    arr := make([]int, 5)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n}\n     fmt.Println(arr)\n    imin := 0\n    for i := 1; i < len(arr); i++ {\n        if arr[i] < arr [imin] {\n            imin = i\n        }\n    }\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,158 +23,257 @@\n mt%22%0A\n-%0A\n func m\n-ain() %7B%0A%09var x, menor int%0A%0A%09fmt.Scan(&menor)%0A%0A%09for i := 1; i %3C 5; i++ %7B%0A%09%09fmt.Scan(&x)%0A%09%09if x %3C menor %7B%0A%09%09%09menor = x%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(menor)%0A\n+enorindice (arr ) %7B%0A    arr := make(%5B%5Dint, 5)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A%7D%0A     fmt.Println(arr)%0A    imin := 0%0A    for i := 1; i %3C len(arr); i++ %7B%0A        if arr%5Bi%5D %3C arr %5Bimin%5D %7B%0A            imin = i%0A        %7D%0A    \n %7D%0A\n",
             "lines": "15"
+        },
+        {
+            "label": "2026-07-06_03-22-31",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar x, menor int\n\n\tfmt.Scan(&menor)\n\n\tfor i := 1; i < 5; i++ {\n\t\tfmt.Scan(&x)\n\t\tif x < menor {\n\t\t\tmenor = x\n\t\t}\n\t}\n\n\tfmt.Println(menor)\n}\n",
+            "lines": "18"
         }
     ]
 }

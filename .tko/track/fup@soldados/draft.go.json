@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_20-02-03",
+            "content": "@@ -281,16 +281,50 @@\n ; i++ %7B%0A\n+%09%09%09for k := i + 1; k %3C nl; k++ %7B%0A%09\n %09%09%09if ma\n@@ -329,11 +329,9 @@\n mat%5B\n-i+1\n+k\n %5D%5Bj%5D\n@@ -353,15 +353,22 @@\n %09%09%09%09\n+%09\n cont++%0A\n+%09%09%09%09%7D%0A\n %09%09%09%7D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-06_20-02-58",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar nl, nc int\n\tfmt.Scan(&nl, &nc)\n\n\tmat := make([][]int, nl)\n\tfor i := 0; i < nl; i++ {\n\t\tmat[i] = make([]int, nc)\n\t\tfor j := 0; j < nc; j++ {\n\t\t\tfmt.Scan(&mat[i][j])\n\t\t}\n\t}\n\n\tcont := 0\n\n\tfor j := 0; j < nc; j++ {\n\t\tfor i := 0; i < nl-1; i++ {\n\t\t\tif mat[i+1][j] < mat[i][j] {\n\t\t\t\tcont++\n\t\t\t}\n\t\t}\n\t}\n\n\tfmt.Println(cont)\n}\n",
+            "lines": "28"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_19-37-28",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar m [3][3]int\n\n\tfor i := 0; i < 3; i++ {\n\t\tfor j := 0; j < 3; j++ {\n\t\t\tfmt.Scan(&m[i][j])\n\t\t}\n\t}\n\n\tsoma := m[0][0] + m[0][1] + m[0][2]\n\n\tfor i := 0; i < 3; i++ {\n\t\tlinha := 0\n\t\tcoluna := 0\n\n\t\tfor j := 0; j < 3; j++ {\n\t\t\tlinha += m[i][j]\n\t\t\tcoluna += m[j][i]\n\t\t}\n\n\t\tif linha != soma || coluna != soma {\n\t\t\tfmt.Println(\"nao\")\n\t\t\treturn\n\t\t}\n\t}\n\n\tdiag1 := m[0][0] + m[1][1] + m[2][2]\n\tdiag2 := m[0][2] + m[1][1] + m[2][0]\n\n\tif diag1 != soma || diag2 != soma {\n\t\tfmt.Println(\"nao\")\n\t} else {\n\t\tfmt.Println(\"sim\")\n\t}\n}\n",
+            "lines": "39"
+        }
+    ]
+}

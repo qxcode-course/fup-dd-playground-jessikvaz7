@@ -13,16 +13,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@string
-- fup@if1
-- fup@games
-- fup@list
 - fup@mat
-- fup@base
-- fup@for2
-- fup@for1
-- fup@if2
-- fup@struct
 flags:
   inbox: all
   panel: skills
@@ -32,5 +23,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@facil
-selected_index: 128
+selected: fup@games
+selected_index: 24

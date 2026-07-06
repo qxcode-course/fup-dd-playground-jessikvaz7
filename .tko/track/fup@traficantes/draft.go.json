@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_07-18-07",
+            "content": "@@ -42,19 +42,8 @@\n os%22%0A\n-%09%22strings%22%0A\n )%0A%0Af\n@@ -98,244 +98,125 @@\n )%0A%0A%09\n+var \n texto, \n-_ := reader.ReadString('%5Cn')%0A%09texto = strings.TrimRight(texto, %22%5Cr%5Cn%22)%0A%0A%09antiga, _ := reader.ReadString('%5Cn')%0A%09antiga = strings.TrimRight(antiga, %22%5Cr%5Cn%22)%0A%0A%09nova, _ := reader.ReadString('%5Cn')%0A%09nova = strings.TrimRight(nova, %22%5Cr%5Cn%22\n+antiga, nova string%0A%0A%09fmt.Fscanln(reader, &texto)%0A%09fmt.Fscanln(reader, &antiga)%0A%09fmt.Fscanln(reader, &nova\n )%0A%0A%09\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-06_07-19-58",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\ttexto = strings.TrimRight(texto, \"\\r\\n\")\n\n\tantiga, _ := reader.ReadString('\\n')\n\tantiga = strings.TrimRight(antiga, \"\\r\\n\")\n\n\tnova, _ := reader.ReadString('\\n')\n\tnova = strings.TrimRight(nova, \"\\r\\n\")\n\n\ti := 0\n\tfor i < len(texto) {\n\t\tif i+len(antiga) <= len(texto) && texto[i:i+len(antiga)] == antiga {\n\t\t\tfmt.Print(nova)\n\t\t\ti += len(antiga)\n\t\t} else {\n\t\t\tfmt.Printf(\"%c\", texto[i])\n\t\t\ti++\n\t\t}\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "33"
+        }
+    ]
+}

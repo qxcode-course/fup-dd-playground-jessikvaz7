@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_03-19-34",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tnum := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tvar x int\n\t\tfmt.Scan(&x)\n\t\tnum = num*10 + x\n\t}\n\n\tfmt.Println(num)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

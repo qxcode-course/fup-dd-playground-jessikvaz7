@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
-func menorindice (arr ) {
-    
-    arr := make([]int, 5)
-    for i := range arr {
-        fmt.Scan(&arr[i])
-    }
+func main() {
+	var x, menor int
+
+	fmt.Scan(&menor)
+
+	for i := 1; i < 5; i++ {
+		fmt.Scan(&x)
+		if x < menor {
+			menor = x
+		}
+	}
+
+	fmt.Println(menor)
 }
-     fmt.Println(arr)
-    imin := 0
-    for i := 1; i < len(arr); i++ {
-        if arr[i] < arr [imin] {
-            imin = i
-        }
-    }

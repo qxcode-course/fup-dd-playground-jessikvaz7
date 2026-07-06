@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_19-28-34",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tmat := make([][]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tmat[i] = make([]int, n)\n\t\tfor j := 0; j < n; j++ {\n\t\t\tfmt.Scan(&mat[i][j])\n\t\t}\n\t}\n\n\tmaiorColuna := 0\n\tmaiorValor := -1\n\n\tfor j := 0; j < n; j++ {\n\t\tsoma := 0\n\t\tfor i := 0; i < n; i++ {\n\t\t\tsoma += mat[i][j] * mat[i][j]\n\t\t}\n\n\t\tif soma > maiorValor {\n\t\t\tmaiorValor = soma\n\t\t\tmaiorColuna = j\n\t\t}\n\t}\n\n\tfmt.Println(maiorColuna)\n}\n",
+            "lines": "33"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_07-30-52",
+            "content": "@@ -197,17 +197,16 @@\n .Stdin)%0A\n-%0A\n %09texto, \n@@ -460,60 +460,82 @@\n %0A%09%09%09\n-// Remove apenas a primeira vogal da pr%C3%B3xima palavra\n+j := 0%0A%09%09%09for j %3C len(palavras%5Bi%5D) && vogal(palavras%5Bi%5D%5Bj%5D) %7B%0A%09%09%09%09j++%0A%09%09%09%7D\n %0A%09%09%09\n@@ -554,17 +554,17 @@\n vras%5Bi%5D%5B\n-1\n+j\n :%5D%0A%09%09%7D e\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-07-06_07-33-03",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc vogal(c byte) bool {\n\treturn c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\ttexto = strings.TrimSpace(texto)\n\n\tpalavras := strings.Split(texto, \" \")\n\n\tresp := palavras[0]\n\n\tfor i := 1; i < len(palavras); i++ {\n\t\tult := resp[len(resp)-1]\n\t\tpri := palavras[i][0]\n\n\t\tif vogal(ult) && vogal(pri) {\n\t\t\t// Remove apenas a primeira vogal da pr\u00f3xima palavra\n\t\t\tresp += palavras[i][1:]\n\t\t} else {\n\t\t\tresp += \" \" + palavras[i]\n\t\t}\n\t}\n\n\tfmt.Println(resp)\n}\n",
+            "lines": "37"
+        }
+    ]
+}

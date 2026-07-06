@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_07-08-47",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\ttexto = strings.TrimSpace(texto)\n\n\ttrecho, _ := reader.ReadString('\\n')\n\ttrecho = strings.TrimSpace(trecho)\n\n\tfmt.Println(strings.Count(texto, trecho))\n}\n",
+            "lines": "20"
+        }
+    ]
+}

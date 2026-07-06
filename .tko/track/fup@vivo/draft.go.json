@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_21-38-32",
+            "content": "@@ -217,24 +217,39 @@\n for \n-k\n+rodada\n  := 0; \n-k %3C r; k\n+rodada %3C r; rodada\n ++ %7B\n@@ -475,47 +475,8 @@\n %09%7D%0A%0A\n-%09%09if teste %3E 1 %7B%0A%09%09%09fmt.Println()%0A%09%09%7D%0A%0A\n %09%09fm\n@@ -527,16 +527,32 @@\n fila%5B0%5D)\n+%0A%09%09fmt.Println()\n %0A%0A%09%09test\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-05_21-40-04",
+            "content": "@@ -270,32 +270,36 @@\n &n, &j)%0A%0A%09%09%09nova\n+Fila\n  := make(%5B%5Dint, \n@@ -379,32 +379,36 @@\n == j %7B%0A%09%09%09%09%09nova\n+Fila\n  = append(nova, \n@@ -397,32 +397,36 @@\n la = append(nova\n+Fila\n , fila%5Bi%5D)%0A%09%09%09%09%7D\n@@ -442,32 +442,36 @@\n %09fila = nova\n+Fila\n %0A%09%09%7D%0A%0A%09%09\n fmt.Printf(%22\n@@ -462,494 +462,39 @@\n %0A%0A%09%09\n-fmt.Printf(%22Teste %25d%5Cn%22, teste)%0A%09%09fmt.Println(fila%5B0%5D)%0A%0A%09%09teste++%0A%0A%09%09var p2, r2 int%0A%09%09fmt.Scan(&p2, &r2)%0A%09%09if p2 == 0 && r2 == 0 %7B%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09fmt.Println()%0A%0A%09%09p = p2%0A%09%09r = r2%0A%0A%09%09fila = make(%5B%5Dint, p)%0A%09%09for i := 0; i %3C p; i++ %7B%0A%09%09%09fmt.Scan(&fila%5Bi%5D)%0A%09%09%7D%0A%0A%09%09for k := 0; k %3C r; k++ %7B%0A%09%09%09var n, j int%0A%09%09%09fmt.Scan(&n, &j)%0A%0A%09%09%09nova := make(%5B%5Dint, 0)%0A%0A%09%09%09for i := 0; i %3C n; i++ %7B%0A%09%09%09%09var a int%0A%09%09%09%09fmt.Scan(&a)%0A%0A%09%09%09%09if a == j %7B%0A%09%09%09%09%09nova = append(nova, fila%5Bi%5D)%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%0A%09%09%09fila = nova\n+if teste %3E 1 %7B%0A%09%09%09fmt.Println()\n %0A%09%09%7D\n@@ -552,16 +552,17 @@\n ila%5B0%5D)%0A\n+%0A\n %09%09teste+\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-07-05_21-41-15",
+            "content": "@@ -50,26 +50,8 @@\n := 1\n-%0A%09primeiro := true\n %0A%0A%09f\n@@ -134,62 +134,499 @@\n %0A%0A%09%09\n-if !primeiro %7B%0A%09%09%09fmt.Println()%0A%09%09%7D%0A%09%09primeiro = false\n+fila := make(%5B%5Dint, p)%0A%09%09for i := 0; i %3C p; i++ %7B%0A%09%09%09fmt.Scan(&fila%5Bi%5D)%0A%09%09%7D%0A%0A%09%09for k := 0; k %3C r; k++ %7B%0A%09%09%09var n, j int%0A%09%09%09fmt.Scan(&n, &j)%0A%0A%09%09%09nova := make(%5B%5Dint, 0)%0A%0A%09%09%09for i := 0; i %3C n; i++ %7B%0A%09%09%09%09var a int%0A%09%09%09%09fmt.Scan(&a)%0A%0A%09%09%09%09if a == j %7B%0A%09%09%09%09%09nova = append(nova, fila%5Bi%5D)%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%0A%09%09%09fila = nova%0A%09%09%7D%0A%0A%09%09fmt.Printf(%22Teste %25d%5Cn%22, teste)%0A%09%09fmt.Println(fila%5B0%5D)%0A%0A%09%09teste++%0A%0A%09%09var p2, r2 int%0A%09%09fmt.Scan(&p2, &r2)%0A%09%09if p2 == 0 && r2 == 0 %7B%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09fmt.Println()%0A%0A%09%09p = p2%0A%09%09r = r2\n %0A%0A%09%09\n@@ -622,33 +622,32 @@\n %09r = r2%0A%0A%09%09fila \n-:\n = make(%5B%5Dint, p)\n@@ -983,32 +983,31 @@\n rintln(fila%5B0%5D)%0A\n-%0A\n %09%09teste++%0A%09%7D%0A%7D%0A\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-07-05_21-42-13",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tteste := 1\n\tprimeiro := true\n\n\tfor {\n\t\tvar p, r int\n\t\tfmt.Scan(&p, &r)\n\n\t\tif p == 0 && r == 0 {\n\t\t\tbreak\n\t\t}\n\n\t\tif !primeiro {\n\t\t\tfmt.Println()\n\t\t}\n\t\tprimeiro = false\n\n\t\tfila := make([]int, p)\n\t\tfor i := 0; i < p; i++ {\n\t\t\tfmt.Scan(&fila[i])\n\t\t}\n\n\t\tfor k := 0; k < r; k++ {\n\t\t\tvar n, j int\n\t\t\tfmt.Scan(&n, &j)\n\n\t\t\tnova := make([]int, 0)\n\n\t\t\tfor i := 0; i < n; i++ {\n\t\t\t\tvar a int\n\t\t\t\tfmt.Scan(&a)\n\n\t\t\t\tif a == j {\n\t\t\t\t\tnova = append(nova, fila[i])\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tfila = nova\n\t\t}\n\n\t\tfmt.Printf(\"Teste %d\\n\", teste)\n\t\tfmt.Println(fila[0])\n\n\t\tteste++\n\t}\n}\n",
+            "lines": "50"
+        }
+    ]
+}
