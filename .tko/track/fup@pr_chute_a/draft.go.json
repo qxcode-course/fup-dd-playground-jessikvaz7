@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_04-44-37",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n\t\"time\"\n)\n\nfunc main() {\n\trand.Seed(time.Now().UnixNano())\n\n\tinferior := 0\n\tsuperior := 100\n\tsecreto := rand.Intn(99) + 1\n\n\tfor {\n\t\t// Verifica se s\u00f3 resta um n\u00famero poss\u00edvel\n\t\tif superior-inferior == 2 {\n\t\t\tfmt.Printf(\"Era %d, voc\u00ea perdeu!\\n\", secreto)\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Printf(\"Diga um numero entre ]%d, %d[: \", inferior, superior)\n\n\t\tvar chute int\n\t\tfmt.Scan(&chute)\n\n\t\t// Garante que o chute esteja dentro do intervalo aberto\n\t\tif chute <= inferior || chute >= superior {\n\t\t\tfmt.Println(\"Chute invalido!\")\n\t\t\tcontinue\n\t\t}\n\n\t\tif chute == secreto {\n\t\t\tfmt.Printf(\"Era %d, voc\u00ea ganhou!\\n\", secreto)\n\t\t\tbreak\n\t\t}\n\n\t\tif chute < secreto {\n\t\t\tinferior = chute\n\t\t} else {\n\t\t\tsuperior = chute\n\t\t}\n\t}\n}\n",
+            "lines": "45"
+        }
+    ]
+}

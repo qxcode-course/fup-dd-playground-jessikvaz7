@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_21-54-40",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Fator struct {\n\tnum int\n\tqtd int\n}\n\nfunc calcFatores(n int) []Fator {\n\tvar fatores []Fator\n\n\tfor i := 2; i*i <= n; i++ {\n\t\tif n%i == 0 {\n\t\t\tcont := 0\n\t\t\tfor n%i == 0 {\n\t\t\t\tn /= i\n\t\t\t\tcont++\n\t\t\t}\n\t\t\tfatores = append(fatores, Fator{i, cont})\n\t\t}\n\t}\n\n\tif n > 1 {\n\t\tfatores = append(fatores, Fator{n, 1})\n\t}\n\n\treturn fatores\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tfatores := calcFatores(n)\n\n\tfor _, f := range fatores {\n\t\tfmt.Println(f.num, f.qtd)\n\t}\n}\n",
+            "lines": "40"
+        }
+    ]
+}

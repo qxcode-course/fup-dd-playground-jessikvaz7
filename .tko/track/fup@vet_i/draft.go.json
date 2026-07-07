@@ -17,7 +17,17 @@
         },
         {
             "label": "2026-06-15_13-59-00",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tfmt.Scanln(&N)\n\n\tnumeros := make([]int, N)\n\n\tfor i := 0; i < N; i++ {\n\t\tfmt.Scanln(&numeros[i])\n\t}\n\n\tfor i := 0; i < N; i++ {\n\t\tfmt.Println(numeros[i])\n\t}\n}\n",
+            "content": "@@ -0,0 +1,211 @@\n+package main%0A%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A%09var N int%0A%09fmt.Scanln(&N)%0A%0A%09numeros := make(%5B%5Dint, N)%0A%0A%09for i := 0; i %3C N; i++ %7B%0A%09%09fmt.Scanln(&numeros%5Bi%5D)%0A%09%7D%0A%0A%09for i := 0; i %3C N; i++ %7B%0A%09%09fmt.Println(numeros%5Bi%5D)%0A%09%7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-07-06_22-10-19",
+            "content": "@@ -1,201 +0,0 @@\n-package main%0A%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09vetor := make(%5B%5Dint, n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&vetor%5Bi%5D)%0A%09%7D%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Println(vetor%5Bi%5D)%0A%09%7D%0A%7D%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2026-07-07_00-09-54",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvetor := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Println(vetor[i])\n\t}\n}\n",
             "lines": "18"
         }
     ]

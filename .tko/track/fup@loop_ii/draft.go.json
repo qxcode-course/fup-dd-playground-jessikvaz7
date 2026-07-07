@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_04-36-25",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int\n\tfmt.Scan(&a, &b)\n\n\tfmt.Print(\"[ \")\n\tfor i := a; i < b; i++ {\n\t\tfmt.Print(i, \" \")\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "14"
+        }
+    ]
+}

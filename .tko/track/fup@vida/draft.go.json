@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_20-45-18",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar nl, nc int\n\tfmt.Scan(&nl, &nc)\n\n\tmat := make([][]byte, nl)\n\tnova := make([][]byte, nl)\n\n\tfor i := 0; i < nl; i++ {\n\t\tvar linha string\n\t\tfmt.Scan(&linha)\n\t\tmat[i] = []byte(linha)\n\t\tnova[i] = make([]byte, nc)\n\t}\n\n\tdx := []int{-1, -1, -1, 0, 0, 1, 1, 1}\n\tdy := []int{-1, 0, 1, -1, 1, -1, 0, 1}\n\n\tfor i := 0; i < nl; i++ {\n\t\tfor j := 0; j < nc; j++ {\n\t\t\tvivos := 0\n\n\t\t\tfor k := 0; k < 8; k++ {\n\t\t\t\tni := i + dx[k]\n\t\t\t\tnj := j + dy[k]\n\n\t\t\t\tif ni >= 0 && ni < nl && nj >= 0 && nj < nc {\n\t\t\t\t\tif mat[ni][nj] == '#' {\n\t\t\t\t\t\tvivos++\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tif mat[i][j] == '#' {\n\t\t\t\tif vivos == 2 || vivos == 3 {\n\t\t\t\t\tnova[i][j] = '#'\n\t\t\t\t} else {\n\t\t\t\t\tnova[i][j] = '.'\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tif vivos == 3 {\n\t\t\t\t\tnova[i][j] = '#'\n\t\t\t\t} else {\n\t\t\t\t\tnova[i][j] = '.'\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\tfor i := 0; i < nl; i++ {\n\t\tfmt.Println(string(nova[i]))\n\t}\n}\n",
+            "lines": "56"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_00-51-08",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, m int\n\tfmt.Scan(&n, &m)\n\n\tmat := make([][]byte, n)\n\tfor i := 0; i < n; i++ {\n\t\tvar s string\n\t\tfmt.Scan(&s)\n\t\tmat[i] = []byte(s)\n\t}\n\n\tdx := []int{-1, -1, -1, 0, 0, 1, 1, 1}\n\tdy := []int{-1, 0, 1, -1, 1, -1, 0, 1}\n\n\tfor i := 0; i < n; i++ {\n\t\tfor j := 0; j < m; j++ {\n\t\t\tif mat[i][j] == '*' {\n\t\t\t\tcontinue\n\t\t\t}\n\n\t\t\tcont := 0\n\t\t\tfor k := 0; k < 8; k++ {\n\t\t\t\tni := i + dx[k]\n\t\t\t\tnj := j + dy[k]\n\n\t\t\t\tif ni >= 0 && ni < n && nj >= 0 && nj < m && mat[ni][nj] == '*' {\n\t\t\t\t\tcont++\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tif cont > 0 {\n\t\t\t\tmat[i][j] = byte(cont + '0')\n\t\t\t}\n\t\t}\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Println(string(mat[i]))\n\t}\n}\n",
+            "lines": "44"
+        }
+    ]
+}

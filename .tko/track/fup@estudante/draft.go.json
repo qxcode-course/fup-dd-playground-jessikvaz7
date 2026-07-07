@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_21-44-13",
+            "content": "@@ -50,19 +50,8 @@\n rt%22%0A\n-%09%22strings%22%0A\n )%0A%0At\n@@ -231,28 +231,40 @@\n der.Read\n-String(\n+Byte() // consome o \n '%5Cn'\n-)\n %0A%0A%09aluno\n@@ -372,31 +372,43 @@\n e = \n-strings.TrimSpace(nome)\n+nome%5B:len(nome)-1%5D // remove o '%5Cn'\n %0A%0A%09%09\n@@ -483,28 +483,40 @@\n der.Read\n-String(\n+Byte() // consome o \n '%5Cn'\n-)\n %0A%0A%09%09alun\n@@ -599,14 +599,8 @@\n lice\n-Stable\n (alu\n@@ -626,16 +626,104 @@\n  bool %7B%0A\n+%09%09if alunos%5Bi%5D.media == alunos%5Bj%5D.media %7B%0A%09%09%09return alunos%5Bi%5D.nome %3C alunos%5Bj%5D.nome%0A%09%09%7D%0A\n %09%09return\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-07-06_21-45-24",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"sort\"\n\t\"strings\"\n)\n\ntype Aluno struct {\n\tnome        string\n\tn1, n2, n3 float64\n\tmedia       float64\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscan(reader, &n)\n\treader.ReadString('\\n')\n\n\talunos := make([]Aluno, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tnome, _ := reader.ReadString('\\n')\n\t\talunos[i].nome = strings.TrimSpace(nome)\n\n\t\tfmt.Fscan(reader, &alunos[i].n1, &alunos[i].n2, &alunos[i].n3)\n\t\treader.ReadString('\\n')\n\n\t\talunos[i].media = (alunos[i].n1 + alunos[i].n2 + alunos[i].n3) / 3.0\n\t}\n\n\tsort.SliceStable(alunos, func(i, j int) bool {\n\t\treturn alunos[i].media > alunos[j].media\n\t})\n\n\tfor i, a := range alunos {\n\t\tfmt.Printf(\"%d: %s\\n\", i, a.nome)\n\t\tfmt.Printf(\"   Media: %.2f\\n\", a.media)\n\t\tfmt.Printf(\"   N1: %.2f, N2: %.2f, N3: %.2f\\n\", a.n1, a.n2, a.n3)\n\t}\n}\n",
+            "lines": "45"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_01-56-33",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int\n\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tfor i := a; i < b; i++ {\n\t\tfmt.Println(i)\n\t}\n}\n",
+            "lines": "14"
+        }
+    ]
+}

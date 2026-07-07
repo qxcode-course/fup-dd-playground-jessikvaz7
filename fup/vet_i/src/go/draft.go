@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var N int
-	fmt.Scanln(&N)
+	var n int
+	fmt.Scan(&n)
 
-	numeros := make([]int, N)
+	vetor := make([]int, n)
 
-	for i := 0; i < N; i++ {
-		fmt.Scanln(&numeros[i])
+	for i := 0; i < n; i++ {
+		fmt.Scan(&vetor[i])
 	}
 
-	for i := 0; i < N; i++ {
-		fmt.Println(numeros[i])
+	for i := 0; i < n; i++ {
+		fmt.Println(vetor[i])
 	}
 }

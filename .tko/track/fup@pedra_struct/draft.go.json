@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_20-57-39",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Jogada struct {\n\tp1, p2 int\n}\n\nfunc abs(x int) int {\n\tif x < 0 {\n\t\treturn -x\n\t}\n\treturn x\n}\n\n// retorna se a jogada \u00e9 v\u00e1lida e a pontua\u00e7\u00e3o\nfunc calcPontuacao(j Jogada) (bool, int) {\n\tif j.p1 < 10 || j.p2 < 10 {\n\t\treturn false, 0\n\t}\n\treturn true, abs(j.p1-j.p2)\n}\n\nfunc procurarMelhorJogada(jogadas []Jogada) int {\n\tmelhor := -1\n\tmenorPont := 0\n\n\tfor i := 0; i < len(jogadas); i++ {\n\t\tvalida, pont := calcPontuacao(jogadas[i])\n\n\t\tif !valida {\n\t\t\tcontinue\n\t\t}\n\n\t\tif melhor == -1 || pont < menorPont {\n\t\t\tmelhor = i\n\t\t\tmenorPont = pont\n\t\t}\n\t}\n\n\treturn melhor\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tjogadas := make([]Jogada, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&jogadas[i].p1, &jogadas[i].p2)\n\t}\n\n\tresp := procurarMelhorJogada(jogadas)\n\n\tif resp == -1 {\n\t\tfmt.Println(\"sem ganhador\")\n\t} else {\n\t\tfmt.Println(resp)\n\t}\n}\n",
+            "lines": "61"
+        }
+    ]
+}

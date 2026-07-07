@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_22-07-36",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Pessoa struct {\n\tnome  string\n\tidade int\n\tsexo  string\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tpessoas := make([]Pessoa, n)\n\n\tmaiorIdade := -1\n\tnome := \"\"\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&pessoas[i].nome, &pessoas[i].idade, &pessoas[i].sexo)\n\n\t\tif pessoas[i].sexo == \"f\" && pessoas[i].idade > maiorIdade {\n\t\t\tmaiorIdade = pessoas[i].idade\n\t\t\tnome = pessoas[i].nome\n\t\t}\n\t}\n\n\tif maiorIdade == -1 {\n\t\tfmt.Println(\"nao tem mulher\")\n\t} else {\n\t\tfmt.Println(nome)\n\t}\n}\n",
+            "lines": "34"
+        }
+    ]
+}

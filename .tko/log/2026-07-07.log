@@ -1,0 +1,86 @@
+2026-07-07 00:09:34, MOVE, v:1, k:fup@vet_i, mode:PICK
+2026-07-07 00:09:54, EXEC, v:1, k:fup@vet_i, mode:FULL, rate:75, size:18
+2026-07-07 00:10:56, MOVE, v:1, k:fup@vet_i, mode:BACK
+2026-07-07 00:11:19, MOVE, v:1, k:fup@minado, mode:DOWN
+2026-07-07 00:11:20, MOVE, v:1, k:fup@minado, mode:PICK
+2026-07-07 00:09:54, MOVE, v:1, k:fup@vet_i, mode:EDIT
+2026-07-07 00:11:19, MOVE, v:1, k:fup@minado, mode:EDIT
+2026-07-07 00:12:14, MOVE, v:1, k:fup@minado, mode:EDIT
+2026-07-07 00:51:08, EXEC, v:1, k:fup@minado, mode:FULL, rate:100, size:44
+2026-07-07 00:51:11, MOVE, v:1, k:fup@minado, mode:BACK
+2026-07-07 00:51:48, SELF, v:1, k:fup@minado, self:1, rate:100, concept:1, refactor:1
+2026-07-07 00:52:16, MOVE, v:1, k:fup@loop_i, mode:DOWN
+2026-07-07 00:52:18, MOVE, v:1, k:fup@loop_i, mode:PICK
+2026-07-07 00:52:16, MOVE, v:1, k:fup@loop_i, mode:EDIT
+2026-07-07 01:54:42, MOVE, v:1, k:fup@loop_i, mode:PICK
+2026-07-07 01:56:33, EXEC, v:1, k:fup@loop_i, mode:FULL, rate:100, size:14
+2026-07-07 01:56:36, MOVE, v:1, k:fup@loop_i, mode:BACK
+2026-07-07 01:56:43, SELF, v:1, k:fup@loop_i, self:1, rate:100, concept:1
+2026-07-07 01:56:26, MOVE, v:1, k:fup@loop_i, mode:EDIT
+2026-07-07 01:56:32, MOVE, v:1, k:fup@loop_i, mode:EDIT
+2026-07-07 04:20:51, MOVE, v:1, k:fup@loop_ii, mode:DOWN
+2026-07-07 04:20:52, MOVE, v:1, k:fup@loop_ii, mode:PICK
+2026-07-07 04:20:51, MOVE, v:1, k:fup@loop_ii, mode:EDIT
+2026-07-07 04:21:42, MOVE, v:1, k:fup@loop_ii, mode:EDIT
+2026-07-07 04:36:25, EXEC, v:1, k:fup@loop_ii, mode:FULL, rate:100, size:14
+2026-07-07 04:36:27, MOVE, v:1, k:fup@loop_ii, mode:BACK
+2026-07-07 04:36:34, SELF, v:1, k:fup@loop_ii, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:37:04, MOVE, v:1, k:fup@minhocas, mode:DOWN
+2026-07-07 04:37:05, MOVE, v:1, k:fup@minhocas, mode:PICK
+2026-07-07 04:36:25, MOVE, v:1, k:fup@loop_ii, mode:EDIT
+2026-07-07 04:37:04, MOVE, v:1, k:fup@minhocas, mode:EDIT
+2026-07-07 04:37:04, MOVE, v:1, k:fup@minhocas, mode:EDIT
+2026-07-07 04:38:39, EXEC, v:1, k:fup@minhocas, mode:FULL, rate:100, size:36
+2026-07-07 04:38:40, MOVE, v:1, k:fup@minhocas, mode:BACK
+2026-07-07 04:38:47, SELF, v:1, k:fup@minhocas, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:38:59, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-07-07 04:39:38, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0
+2026-07-07 04:41:21, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0, size:90
+2026-07-07 04:38:07, MOVE, v:1, k:fup@minhocas, mode:EDIT
+2026-07-07 04:38:39, MOVE, v:1, k:fup@minhocas, mode:EDIT
+2026-07-07 04:41:17, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-07-07 04:41:16, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-07-07 04:43:09, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0
+2026-07-07 04:43:18, MOVE, v:1, k:fup@pr_jokenpo, mode:BACK
+2026-07-07 04:43:27, MOVE, v:1, k:fup@pr_chute_a, mode:DOWN
+2026-07-07 04:43:27, MOVE, v:1, k:fup@pr_chute_a, mode:PICK
+2026-07-07 04:44:37, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0, size:45
+2026-07-07 04:45:38, MOVE, v:1, k:fup@pr_chute_a, mode:BACK
+2026-07-07 04:45:42, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-07-07 04:46:39, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0
+2026-07-07 04:46:51, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0
+2026-07-07 04:47:08, MOVE, v:1, k:fup@pr_jokenpo, mode:BACK
+2026-07-07 04:47:34, SELF, v:1, k:fup@jokenpo, self:1, rate:100, concept:1
+2026-07-07 04:46:47, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-07-07 04:44:31, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-07-07 04:44:33, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-07-07 04:47:46, SELF, v:1, k:fup@mumia, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:47:53, SELF, v:1, k:fup@round, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:47:56, MOVE, v:1, k:fup@impar, mode:PICK
+2026-07-07 04:47:58, MOVE, v:1, k:fup@impar, mode:BACK
+2026-07-07 04:48:06, SELF, v:1, k:fup@impar, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:48:13, SELF, v:1, k:fup@quantos, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:48:23, SELF, v:1, k:fup@guarda, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:48:28, SELF, v:1, k:fup@calc, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:48:30, MOVE, v:1, k:fup@multiplo, mode:PICK
+2026-07-07 04:48:32, MOVE, v:1, k:fup@multiplo, mode:BACK
+2026-07-07 04:48:36, SELF, v:1, k:fup@multiplo, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:48:41, SELF, v:1, k:fup@positivo, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:48:46, SELF, v:1, k:fup@ou, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:48:50, SELF, v:1, k:fup@max, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:48:56, SELF, v:1, k:fup@abs, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:49:06, SELF, v:1, k:fup@tv, self:1, rate:100, concept:1
+2026-07-07 04:49:11, SELF, v:1, k:fup@tv, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:49:24, SELF, v:1, k:fup@operacoes, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:49:30, SELF, v:1, k:fup@data, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:49:37, SELF, v:1, k:fup@opala, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:49:54, SELF, v:1, k:fup@media, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:50:02, SELF, v:1, k:fup@tres, self:1, rate:100, guided:1, concept:1, refactor:1
+2026-07-07 04:50:24, SELF, v:1, k:fup@resto, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:50:31, SELF, v:1, k:fup@tres, self:1, rate:100, guided:1, concept:1, refactor:1
+2026-07-07 04:50:39, SELF, v:1, k:fup@sobrou, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:50:44, SELF, v:1, k:fup@segundos, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:50:49, SELF, v:1, k:fup@celsius, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:50:54, SELF, v:1, k:fup@pintando, self:1, rate:100, friend:sena, concept:1, refactor:1
+2026-07-07 04:50:58, SELF, v:1, k:fup@bala, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:51:05, SELF, v:1, k:fup@tres, self:1, rate:100, concept:1, refactor:1

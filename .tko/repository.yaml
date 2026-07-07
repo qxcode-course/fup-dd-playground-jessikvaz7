@@ -13,7 +13,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@mat
+- fup@if2
 flags:
   inbox: all
   panel: skills
@@ -23,5 +23,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@games
-selected_index: 24
+selected: fup@semana
+selected_index: 4
