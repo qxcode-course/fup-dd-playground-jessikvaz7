@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_04-57-40",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar c, a int\n\n\tfmt.Scan(&c)\n\tfmt.Scan(&a)\n\n\tviagens := (a + (c - 2)) / (c - 1)\n\n\tfmt.Println(viagens)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

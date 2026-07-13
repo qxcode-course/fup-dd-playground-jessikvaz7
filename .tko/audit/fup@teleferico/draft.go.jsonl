@@ -1,0 +1,2 @@
+{"ts":1783400158,"hash":"69217a3079908094e11121d042354a7c1f55b6482ca1a51e1b250dfd1ed0eef9","mode":"full","content":"H4sIAOGGTGoC/wMAAAAAAAAAAAA="}
+{"ts":1783400186,"hash":"ab143158be345e13fbd7d7423cf98631426bceb7a456c1cffe40628467db9b7e","mode":"diff","ops":[{"tag":"insert","a1":0,"a2":0,"text":"package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar c, a int\n\n\tfmt.Scan(&c)\n\tfmt.Scan(&a)\n\n\tviagens := (a + (c - 2)) / (c - 1)\n\n\tfmt.Println(viagens)\n}\n"}]}

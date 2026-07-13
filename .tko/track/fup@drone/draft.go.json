@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_04-55-00",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc passa(x, y, h, l int) bool {\n\treturn (x <= h && y <= l) || (x <= l && y <= h)\n}\n\nfunc main() {\n\tvar a, b, c int\n\tvar h, l int\n\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\tfmt.Scan(&h)\n\tfmt.Scan(&l)\n\n\tif passa(a, b, h, l) ||\n\t\tpassa(a, c, h, l) ||\n\t\tpassa(b, c, h, l) {\n\t\tfmt.Println(\"S\")\n\t} else {\n\t\tfmt.Println(\"N\")\n\t}\n}\n",
+            "lines": "26"
+        }
+    ]
+}

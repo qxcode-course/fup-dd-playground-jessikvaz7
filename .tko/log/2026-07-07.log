@@ -84,3 +84,23 @@
 2026-07-07 04:50:54, SELF, v:1, k:fup@pintando, self:1, rate:100, friend:sena, concept:1, refactor:1
 2026-07-07 04:50:58, SELF, v:1, k:fup@bala, self:1, rate:100, concept:1, refactor:1
 2026-07-07 04:51:05, SELF, v:1, k:fup@tres, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:52:05, MOVE, v:1, k:fup@drone, mode:DOWN
+2026-07-07 04:52:06, MOVE, v:1, k:fup@drone, mode:PICK
+2026-07-07 04:55:00, EXEC, v:1, k:fup@drone, mode:FULL, rate:100, size:26
+2026-07-07 04:55:05, MOVE, v:1, k:fup@drone, mode:BACK
+2026-07-07 04:55:13, SELF, v:1, k:fup@drone, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:55:16, MOVE, v:1, k:fup@teleferico, mode:DOWN
+2026-07-07 04:55:18, MOVE, v:1, k:fup@teleferico, mode:PICK
+2026-07-07 04:52:05, MOVE, v:1, k:fup@drone, mode:EDIT
+2026-07-07 04:53:30, MOVE, v:1, k:fup@drone, mode:EDIT
+2026-07-07 04:55:00, MOVE, v:1, k:fup@drone, mode:EDIT
+2026-07-07 04:55:16, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-07-07 04:56:26, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-07-07 04:57:40, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:100, size:14
+2026-07-07 04:57:43, MOVE, v:1, k:fup@teleferico, mode:BACK
+2026-07-07 04:57:54, SELF, v:1, k:fup@teleferico, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:58:02, SELF, v:1, k:fup@cortada, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:58:08, SELF, v:1, k:fup@bhaskara, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:58:15, SELF, v:1, k:fup@semana, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:58:22, SELF, v:1, k:fup@final, self:1, rate:100, concept:1, refactor:1
+2026-07-07 04:57:40, MOVE, v:1, k:fup@teleferico, mode:EDIT
